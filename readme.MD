@@ -2,15 +2,24 @@
 
 ### Moodboarding and Colour Scheme
 ___
+### Moodboarding
+I want this portfolio page to be cohesive in its design, and also for the colour scheme to have some longevity. That means not using and trendy palettes or overly glitzy/gradiented/energetic colours, and usign a simple and reflexive design. Mainly I want this website to show off some of my skills, and to show a little of my personality!
+
+I found this example of a portfolio page, and really liked the different sections and content! It's a good example of essentially what our portfolio assignment boils down to. I have not used any code but really enjoy the colour scheme and overall cohesive design.
+<picture>
+<img src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12-741x486.jpg" alt="Example of Web Portfolio Design" width="400px">
+</picture>  
+*Codehal, viewed 2025*
+
 #### Colour Scheme
-I want this portfolio page to be cohesive in its design, and also for the colour scheme to have some longevity. For this I would use a Monochrome or Analogous theme with bold colours only being used for emphasis and animations.  
-Will stick to blues, purples and deep reds and reconsider as I go. Would like to use a gradient background for the main section from a slightly saturated blue to a desaturated grey blue.
+For this I would use a Monochrome or Analogous theme with bold colours only being used for emphasis and animations.  
+Will stick to blues, purples and deep reds and reconsider as I go. Would like to use a gradient background for the main section from a slightly saturated blue to a desaturated grey blue.  
 Colours as below:
 - Font Colours
     - Light to contrast dark background colours, dark to contrast light backgrounds
     - All sticking to theme colour pallette
 - Header 
-    - Darkest shade of chosen colour
+    - Darkest shade of chosen colour palette
     - Nav buttons to be light tint of chosen theme colour w/ dark shadow to pop
 - Main
     - Background: Muted version of theme colour, gradient to grey in bottom right corner
@@ -18,12 +27,23 @@ Colours as below:
 - Footer
     - same colour as header to create clean and cohesive look
 
-### Moodboarding
-<img src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12-741x486.jpg" alt="Example of Web Portfolio Design" width="400px">
+
 
 #### Colour Palette Options
+**Option 1**  
+The first colour scheme option is for a monochrome palette of muted blues. I really enjoy this colour scheme as blues tend to evoke calmness and reliability, and greys stability and strength of character. The addition of the darkest blue also is close to black which is mystery and sophistication.
+<picture>
 <img src="./assets/bluescale.png" alt="Colour Palette for Monochrome Blue Design Theme" width="400px">
+</picture>  
+*Coolors, viewed 2025*
+
+**Option 2**  
+The second colour scheme is a little more diverse, with a few extra colours to add some highlighting and details. Since a portfolio is so important to your ongoing success and hirability as a developer, I would like to use this if not initially but in future to really bring particular focus to certain elements and aspects of the page.   
+<picture>
 <img src="./assets/BRP Colour Scale.png" alt="Colour Palette for Blue Purple Red Design Theme" width="400px">
+</picture>  
+*Paletton, created 2025*  
+Overall I would love to at some point really bring in some fun to the page and link to alll major projects with their associated terminal colour schemes! That seems like it would be a great way to integrate a sense of familiarity to each project. If you see the Ubuntu colour scheme? That's probably been designed in Ubuntu!
 
 #### Font Family
 - Consider old school courier/terminal fonts
@@ -98,9 +118,10 @@ max screen width 820
 - adjusted element size with dvw
 
 
-
-## References: 
-|Concept|Websites Used| Used for |
-|:---:|:---:|:-----:|
-|Device Pixel Sizes|https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design | Used to correctly represent screen size in wireframe for iPad, iPhone|
-|Colour Theory| https://codehalweb.com/complete-responsive-personal-portfolio-website/ | Used reference image as part of Moodboarding
+___
+ 
+|References|
+|:---:|
+|Browserstack 2025, *Ideal Screen Sizes for Responsive Design*, viewed 18 April 2025, https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design | 
+|Codehal 2023, 'Complete Responsive Personal Portfolio Website usign HTML, CSS Javascript', *HTML CSS & JAVASCRIPT*, web log post, 8 May, viewed 18 April 2025, https://codehalweb.com/complete-responsive-personal-portfolio-website/ |
+|Paletton 2014, *The Colour Scheme Designer*, viewed 18 April 2025 https://paletton.com/| 
