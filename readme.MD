@@ -5,7 +5,8 @@ ___
 ### Moodboarding
 I want this portfolio page to be cohesive in its design, and also for the colour scheme to have some longevity. That means not using and trendy palettes or overly glitzy/gradiented/energetic colours, and usign a simple and reflexive design. Mainly I want this website to show off some of my skills, and to show a little of my personality!
 
-I found this example of a portfolio page, and really liked the different sections and content! It's a good example of essentially what our portfolio assignment boils down to. I have not used any code but really enjoy the colour scheme and overall cohesive design.
+I found this example of a portfolio page, and really liked the different sections and content! It's a good example of essentially what our portfolio assignment boils down to. I have not used any code but really enjoy the colour scheme and overall cohesive design.  
+
 <picture>
 <img src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12-741x486.jpg" alt="Example of Web Portfolio Design" width="400px">
 </picture>  
@@ -31,7 +32,8 @@ Colours as below:
 
 #### Colour Palette Options
 **Option 1**  
-The first colour scheme option is for a monochrome palette of muted blues. I really enjoy this colour scheme as blues tend to evoke calmness and reliability, and greys stability and strength of character. The addition of the darkest blue also is close to black which is mystery and sophistication.
+The first colour scheme option is for a monochrome palette of muted blues. I really enjoy this colour scheme as blues tend to evoke calmness and reliability, and greys stability and strength of character. The addition of the darkest blue also is close to black which is mystery and sophistication.  
+
 <picture>
 <img src="./assets/bluescale.png" alt="Colour Palette for Monochrome Blue Design Theme" width="400px">
 </picture>  
@@ -39,6 +41,7 @@ The first colour scheme option is for a monochrome palette of muted blues. I rea
 
 **Option 2**  
 The second colour scheme is a little more diverse, with a few extra colours to add some highlighting and details. Since a portfolio is so important to your ongoing success and hirability as a developer, I would like to use this if not initially but in future to really bring particular focus to certain elements and aspects of the page.   
+
 <picture>
 <img src="./assets/BRP Colour Scale.png" alt="Colour Palette for Blue Purple Red Design Theme" width="400px">
 </picture>  
