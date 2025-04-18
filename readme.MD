@@ -10,6 +10,7 @@ I found this example of a portfolio page, and really liked the different section
 <picture>
 <img src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12-741x486.jpg" alt="Example of Web Portfolio Design" width="400px">
 </picture>  
+
 *Codehal, viewed 2025*
 
 #### Colour Scheme
@@ -37,6 +38,7 @@ The first colour scheme option is for a monochrome palette of muted blues. I rea
 <picture>
 <img src="./assets/bluescale.png" alt="Colour Palette for Monochrome Blue Design Theme" width="400px">
 </picture>  
+
 *Coolors, viewed 2025*
 
 **Option 2**  
@@ -45,6 +47,7 @@ The second colour scheme is a little more diverse, with a few extra colours to a
 <picture>
 <img src="./assets/BRP Colour Scale.png" alt="Colour Palette for Blue Purple Red Design Theme" width="400px">
 </picture>  
+
 *Paletton, created 2025*  
 Overall I would love to at some point really bring in some fun to the page and link to alll major projects with their associated terminal colour schemes! That seems like it would be a great way to integrate a sense of familiarity to each project. If you see the Ubuntu colour scheme? That's probably been designed in Ubuntu!
 
