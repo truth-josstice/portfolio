@@ -30,6 +30,8 @@ Colours as below:
 - If this is not stylistically cohesive then look for sans serif font style groupings
 
 ### Pages and Sections
+
+The home page is the base for explaining who I am and what my skills are/will be. The information here should be enough to form an idea of what the portfolio website is trying to achieve, with further details provided on all child pages. Nav bar reflects the priority of other pages on the site, with projects, work history and finally contact as the heirarchy. The footer is present on all pages and has direct contact details as well as links to social media and git.
 ___
 #### Header, Footer and Navbar
 Header is simple clean design static formatting for all subpages:
@@ -60,30 +62,40 @@ Flexbox and Card divs for projects with the following in each:
 - Image Thumb - code snippet for each project
 - Project Title - Title 
 - Description of project and skills/languages used
-Can link to all repos on GitHub directly through clickable image thumb.
+Can link to all repos on GitHub directly through clickable image thumb, as well as upcoming assessments in the DEV1001/1002 modules.
 
 Ideally use shadow and/or neon effect to add emphasis to each, with hover psuedoclass.  
 Ideas for unique hover animations:
 - Neon colour change effect on hover
-- Scale increase on hover
 - Grayscale all other cards on hover? 
 	- This one would be a challenge as we haven't really covered this on any lessons, would look cool though to emphasise the one card!
 
 #### Work History
-See above, with additional details below:
+Formatting similar to above, with additional details below:
+- Scale animation on hover
+- Other job experience including ZV & skills, Brooksfield & skills. 
+- Excel file snippets (macros and logic strings)
+- Link to file on html page - Resume.PDF  
+- Any external links to websites as needed!
 
-Link to file on html page - Resume.PDF  
-Any external links to websites as needed!
-
-### Mobile Device Responsive Design
+## Responsive Design
+__
+### Mobile Device
 Max Screen width 600  
-No hover animations for any sections  
-re-display card content as single column
+- No hover animations for any sections  
+- adjust font size with dvw
+- adjust home page detail 
+- re-display card content as single scrollable column
+- thumbnail image spin animation on click/touch?
+- adjusted element size with dvw
 
 
-### Tablet Device Responsive Design
+### Tablet Device
 max screen width 820  
-No hover animations for any sections  
+- No hover animations for any sections  
+- re-display card content as dual scrollable columns
+- thumbnail image spin animation on click/touch?
+- adjusted element size with dvw
 
 
 
