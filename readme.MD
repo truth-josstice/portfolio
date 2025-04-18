@@ -21,16 +21,19 @@ Colours as below:
 ### Moodboarding
 <img src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12-741x486.jpg" alt="Example of Web Portfolio Design" width="400px">
 
-##### Colour Palette Options
+#### Colour Palette Options
 <img src="./assets/bluescale.png" alt="Colour Palette for Monochrome Blue Design Theme" width="400px">
 <img src="./assets/BRP Colour Scale.png" alt="Colour Palette for Blue Purple Red Design Theme" width="400px">
+
+#### Font Family
+- Consider old school courier/terminal fonts
+- If this is not stylistically cohesive then look for sans serif font style groupings
 
 ### Pages and Sections
 ___
 #### Header, Footer and Navbar
 Header is simple clean design static formatting for all subpages:
 - Logo/Profile Picture top left image
-- Social Media/Contact buttons (circular icon style)
 - Nav bar 
     - 4x clickable anchor link buttons
         - Home
@@ -38,7 +41,10 @@ Header is simple clean design static formatting for all subpages:
         - Work History
         - Contact  
 
-Footer contains copyright information, as well as direct contact info (email mailto link)
+Footer contains: 
+- Copyright information 
+- Social media clickable links (circular icon style)
+- direct contact info (email mailto link)
 
 #### Home page (index.html) 
  All information listed below is in the "MAIN" section of each page
