@@ -60,9 +60,10 @@ main#projectsPage section#projectCards article.projectCard {
 }
 main#projectsPage section#projectCards article.projectCard h3 {
   flex-basis: 100%;
+  padding-top: 2%;
 }
 main#projectsPage section#projectCards article.projectCard img {
-  aspect-ratio: 16/9;
+  height: 50%;
   width: 35%;
   border-radius: 50%;
 }
