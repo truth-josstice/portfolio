@@ -11,7 +11,7 @@ I found this example of a portfolio page, and really liked the different section
 <img src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12-741x486.jpg" alt="Example of Web Portfolio Design" width="400px">
 </picture>  
 
-*Codehal, viewed 2025*
+An example of colour schemes and design. *Codehal, viewed 2025*
 
 #### Colour Scheme
 For this I would use a Monochrome or Analogous theme with bold colours only being used for emphasis and animations.  
@@ -39,7 +39,7 @@ The first colour scheme option is for a monochrome palette of muted blues. I rea
 <img src="./assets/bluescale.png" alt="Colour Palette for Monochrome Blue Design Theme" width="400px">
 </picture>  
 
-*Coolors, viewed 2025*
+Monochrom colour palette example. *Coolors, viewed 2025*
 
 **Option 2**  
 The second colour scheme is a little more diverse, with a few extra colours to add some highlighting and details. Since a portfolio is so important to your ongoing success and hirability as a developer, I would like to use this if not initially but in future to really bring particular focus to certain elements and aspects of the page.   
@@ -48,7 +48,7 @@ The second colour scheme is a little more diverse, with a few extra colours to a
 <img src="./assets/BRP Colour Scale.png" alt="Colour Palette for Blue Purple Red Design Theme" width="400px">
 </picture>  
 
-*Paletton, created 2025*  
+Three colour palatte example. *Paletton, created 2025*  
 Overall I would love to at some point really bring in some fun to the page and link to alll major projects with their associated terminal colour schemes! That seems like it would be a great way to integrate a sense of familiarity to each project. If you see the Ubuntu colour scheme? That's probably been designed in Ubuntu!
 
 #### Font Family
@@ -68,60 +68,66 @@ Header is simple clean design static formatting for all subpages:
         - Projects
         - Work History
         - Contact  
+- Name & Github Handle Logo top right above nav buttons
 
 Footer contains: 
 - Copyright information 
 - Social media clickable links (circular icon style)
-- direct contact info (email mailto link)
+- direct contact info (email mailto link for desktop, email address for mobile and tablet users)
 
 #### Home page (index.html) 
- All information listed below is in the "MAIN" section of each page
-Main
-Landing page with "about me" section, including basic personal information, hobbies and interests.  
+Main  
+Landing page with "about me" section, including basic personal information, hobbies and interests, as well as what programming/design languages I have experience with.
 Will use static elements and containers including large profile image. 
-Animation can go here: 
-- fade in for "about" section 
-- Grayscale colour fade in for large photo
+- Animations
+    - fade in for "about" section 
+    - Grayscale colour fade in for photo
+    - rotation animation for large photo
 
 #### Projects
+Main  
 Flexbox and Card divs for projects with the following in each:
 - Image Thumb - code snippet for each project
 - Project Title - Title 
-- Description of project and skills/languages used
-Can link to all repos on GitHub directly through clickable image thumb, as well as upcoming assessments in the DEV1001/1002 modules.
+- List of skills/languages used
+Alongside the card container will be a "Project Details" section with further detail for each project.
+Link to all repos on GitHub directly through clickable image thumb, as well as upcoming assessments in the DEV1001/1002 modules.
+Card will also be clickable to link to the correct detail section.
 
 Ideally use shadow and/or neon effect to add emphasis to each, with hover psuedoclass.  
 Ideas for unique hover animations:
-- Neon colour change effect on hover
+- Neon colour effect on hover
 - Grayscale all other cards on hover? 
 	- This one would be a challenge as we haven't really covered this on any lessons, would look cool though to emphasise the one card!
+- Scale increase on hover to add emphasis and make text more readable?
 
 #### Work History
+Main  
 Formatting similar to above, with additional details below:
 - Scale animation on hover
 - Other job experience including ZV & skills, Brooksfield & skills. 
 - Excel file snippets (macros and logic strings)
 - Link to file on html page - Resume.PDF  
-- Any external links to websites as needed!
+- Any external links to websites as needed through thumbnail for each job
 
 ## Responsive Design
-__
+
 ### Mobile Device
 Max Screen width 600  
 - No hover animations for any sections  
-- adjust font size with dvw
-- adjust home page detail 
-- re-display card content as single scrollable column
-- thumbnail image spin animation on click/touch?
+    - Animation for each thumbnail to imply that links are clickable
+- adjust font size using most appropriate industry standard responsive formatting
+- display all content in one scrollable section
 - adjusted element size with dvw
 
 
 ### Tablet Device
 max screen width 820  
 - No hover animations for any sections  
+    - Animation for each thumbnail to imply that links are clickable
 - re-display card content as dual scrollable columns
-- thumbnail image spin animation on click/touch?
 - adjusted element size with dvw
+- adjust font size using most appropriate industry standard responsive formatting
 
 
 ___
@@ -129,5 +135,6 @@ ___
 |References|
 |:---:|
 |Browserstack 2025, *Ideal Screen Sizes for Responsive Design*, viewed 18 April 2025, https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design | 
-|Codehal 2023, 'Complete Responsive Personal Portfolio Website usign HTML, CSS Javascript', *HTML CSS & JAVASCRIPT*, web log post, 8 May, viewed 18 April 2025, https://codehalweb.com/complete-responsive-personal-portfolio-website/ |
-|Paletton 2014, *The Colour Scheme Designer*, viewed 18 April 2025 https://paletton.com/| 
+|Codehal 2023, 'Complete Responsive Personal Portfolio Website usign HTML, CSS Javascript', online image, 8 May, viewed 18 April 2025, https://codehalweb.com/complete-responsive-personal-portfolio-website/ |
+|Coolors 2025, The super fast colour palettes, online image, created 18 April 2025, https://coolors.co/|
+|Paletton 2014, *The Colour Scheme Designer*, online image, created 18 April 2025 https://paletton.com/| 
