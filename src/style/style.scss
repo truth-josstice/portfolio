@@ -1,9 +1,23 @@
+@use "./animations" as a;
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+// @use './neonthumb' as nt;
+
+// //defining neon mixin - not what I wanted this to look like, will try animating a glow on keyframes instead
+// @mixin neon($col-1, $col-2, $col-3, $col-4, $col-5, $col-6) {
+    
+//     box-shadow:  
+//       0 0 0.1dvw $col-1, 0 0 0.2dvw $col-2, 
+//       0 0 0.3dvw $col-3, 0 0 0.4dvw $col-4,
+//       0 0 0.5dvw $col-5, 0 0 0.6dvw $col-6,
+//       inset 0 0 0.1dvw $col-1;
+//   }
 
 //Colour themes
 $textdark: #0E192F;
 $textlight: #829CBC;
-$themebluedark: #070F26;
+$themebluedark: #070f26;
 $themebluemiddark: #141F3C;
 $themeblue: #222E4f;
 $themebluemidlight: #384363;
@@ -23,21 +37,30 @@ $themepurplelight: #67507E;
     border: 0;
     margin: 0;
     font-family: "Tilt Neon", sans-serif; //test
+    color: $textdark;
 }
 
 header {
+    display: flex;
     width: 100dvw;
     height: 10dvh;
     background-color: $themebluedark;
+    align-items: center;
+
+    img {
+        height: 10dvh;
+    }
 }
 
 
 body {
     background-color: $themebluemiddark;
+    padding-bottom: 0;
     }
 
 main#projectsPage {
-    padding: 2dvh;
+    margin: 0;
+    padding: 2dvw;
     padding-top: 5dvh;
     display: flex;
     justify-content: space-around;
@@ -48,6 +71,7 @@ main#projectsPage {
         height: 70dvh;
         border-radius: 25px;
         overflow:hidden;
+        box-shadow: #4C3663 0px 0px 25px;
     }
 
     section#projectCards{ 
@@ -65,13 +89,16 @@ main#projectsPage {
         width:45dvw;
         height: 70dvh;
         border-radius: 25px;
-        box-shadow: #4C3663 0px 0px 25px;
+        // box-shadow: #4C3663 0px 0px 25px;
         
         h1 {
+            margin-top: 1dvh;
+            font-size: x-large;
             flex-basis: 100%;
+            text-shadow: 0 0 0.25dvw $textlight;
         }
 
-        article.projectCard{
+        .projectCard{
             display: flex;
             flex-flow: row wrap;
             text-align: center;
@@ -80,21 +107,39 @@ main#projectsPage {
             width:40%;
             height:30%;
             background-color: $themebluelight;
+            box-shadow: 0 0 2px $themebluelight, inset 0 0 5px $themebluedark;
             
+            a {
+                flex-basis: 100%;
+                text-decoration: none;
+                height: 10%;
+            }
+
             h3 {
+                height: 10%;
                 flex-basis: 100%;
                 padding-top: 2%;
             }
 
             img {
-                height: 50%;
+                background-color: $themebluemiddark;
+                margin-left: 10px;
+                height: 55%;
                 width: 35%;
                 border-radius: 50%;
+                animation: neonglow 10s;
+                // @include neon(rebeccapurple,royalblue,green,yellow,orange,red);
+                // @include nt;
+                // @include neon(royalblue, green, yellow, orange, red, rebeccapurple); not working for some reason, no errors but not compiling to css
             }
-
+           
             div {
                 width: 60%;
             }
+        }
+
+        .projectCard:hover{
+            animation: cardhover 3s;
         }
     }
 
@@ -105,6 +150,12 @@ main#projectsPage {
         background-color: $themebluemidlight;
         border-radius: 25px;
         box-shadow: #4C3663 0px 0px 25px;
+
+        h1 {
+            margin-top: 1dvh;
+            font-size: x-large;
+            text-shadow: 0 0 0.25dvw $textlight;
+        }
 
     }
 }

@@ -1,22 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@keyframes neonglow {
+  0% {
+    box-shadow: 0;
+  }
+  15% {
+    box-shadow: 0 0 3dvw rebeccapurple;
+  }
+  30% {
+    box-shadow: 0 0 3dvw royalblue;
+  }
+  45% {
+    box-shadow: 0 0 3dvw green;
+  }
+  60% {
+    box-shadow: 0 0 3dvw yellow;
+  }
+  75% {
+    box-shadow: 0 0 3dvw orange;
+  }
+  90% {
+    box-shadow: 0 0 3dvw red;
+  }
+}
+@keyframes cardhover {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 110%;
+  }
+}
 * {
   border: 0;
   margin: 0;
   font-family: "Tilt Neon", sans-serif;
+  color: #0E192F;
 }
 
 header {
+  display: flex;
   width: 100dvw;
   height: 10dvh;
-  background-color: #070F26;
+  background-color: #070f26;
+  align-items: center;
+}
+header img {
+  height: 10dvh;
 }
 
 body {
   background-color: #141F3C;
+  padding-bottom: 0;
 }
 
 main#projectsPage {
-  padding: 2dvh;
+  margin: 0;
+  padding: 2dvw;
   padding-top: 5dvh;
   display: flex;
   justify-content: space-around;
@@ -27,6 +66,7 @@ main#projectsPage section#boxBorder {
   height: 70dvh;
   border-radius: 25px;
   overflow: hidden;
+  box-shadow: #4C3663 0px 0px 25px;
 }
 main#projectsPage section#projectCards {
   text-align: center;
@@ -43,12 +83,14 @@ main#projectsPage section#projectCards {
   width: 45dvw;
   height: 70dvh;
   border-radius: 25px;
-  box-shadow: #4C3663 0px 0px 25px;
 }
 main#projectsPage section#projectCards h1 {
+  margin-top: 1dvh;
+  font-size: x-large;
   flex-basis: 100%;
+  text-shadow: 0 0 0.25dvw #829CBC;
 }
-main#projectsPage section#projectCards article.projectCard {
+main#projectsPage section#projectCards .projectCard {
   display: flex;
   flex-flow: row wrap;
   text-align: center;
@@ -57,18 +99,31 @@ main#projectsPage section#projectCards article.projectCard {
   width: 40%;
   height: 30%;
   background-color: #515D7E;
+  box-shadow: 0 0 2px #515D7E, inset 0 0 5px #070f26;
 }
-main#projectsPage section#projectCards article.projectCard h3 {
+main#projectsPage section#projectCards .projectCard a {
+  flex-basis: 100%;
+  text-decoration: none;
+  height: 10%;
+}
+main#projectsPage section#projectCards .projectCard h3 {
+  height: 10%;
   flex-basis: 100%;
   padding-top: 2%;
 }
-main#projectsPage section#projectCards article.projectCard img {
-  height: 50%;
+main#projectsPage section#projectCards .projectCard img {
+  background-color: #141F3C;
+  margin-left: 10px;
+  height: 55%;
   width: 35%;
   border-radius: 50%;
+  animation: neonglow 10s;
 }
-main#projectsPage section#projectCards article.projectCard div {
+main#projectsPage section#projectCards .projectCard div {
   width: 60%;
+}
+main#projectsPage section#projectCards .projectCard:hover {
+  animation: cardhover 3s;
 }
 main#projectsPage section#projectDetail {
   text-align: center;
@@ -78,11 +133,16 @@ main#projectsPage section#projectDetail {
   border-radius: 25px;
   box-shadow: #4C3663 0px 0px 25px;
 }
+main#projectsPage section#projectDetail h1 {
+  margin-top: 1dvh;
+  font-size: x-large;
+  text-shadow: 0 0 0.25dvw #829CBC;
+}
 
 footer {
   width: 100dvw;
   height: 10dvh;
-  background-color: #070F26;
+  background-color: #070f26;
   bottom: 0px;
   position: absolute;
   display: flex;

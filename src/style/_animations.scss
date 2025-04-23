@@ -1,0 +1,36 @@
+$themebluelight: #829CBC;
+
+@keyframes neonglow {
+  0% {
+    box-shadow: 0;
+  }
+  15% {
+    box-shadow: 0 0 3dvw rebeccapurple;
+  }
+  30% {
+    box-shadow: 0 0 3dvw royalblue;
+  }
+  45% {
+    box-shadow: 0 0 3dvw green;
+  }
+  60% {
+    box-shadow: 0 0 3dvw yellow;
+  }
+  75% {
+    box-shadow: 0 0 3dvw orange;
+  }
+  90% {
+    box-shadow: 0 0 3dvw red;
+  }
+
+
+}
+
+@keyframes cardhover {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 110%;
+  }
+}
