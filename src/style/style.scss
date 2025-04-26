@@ -210,28 +210,92 @@ main#projectsPage {
 
 
 footer {
-    color: $textlight;
+    // color: $textlight;
+    display: flex;
+    flex-direction: row;
     width: 100dvw;
     height: 10dvh;
     background-color: $themebluedark;
     bottom: 0px;
     position: absolute;   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     
+    // justify-content: flex-start;
+    gap: 2dvw;
+    // align-items: center;
+
+    #footerNav {
+        align-self: center;
+
+        * {
+        color: $textlight;
+        list-style: none;
+        text-decoration: none;
+        // margin-top: 0.2dvh;
+        }
+        
+        li a:hover {
+            color: $themepurplelight;
+        }
+
+    }
+
+    #mailto {
+        align-self: center;
+
+        * {
+            color: $textlight;
+        }
+
+        a:hover{
+            color: $themepurplelight;
+        }
+
+    }
+
+    #socialButtons {
+        display: flex;
+        margin-left: auto;
+        margin-right: 2dvw;
+        align-self: center;
+        justify-content: space-between;
+        width: 12%;
+
+        * {
+        color: $textlight;
+        list-style: none;
+        // justify-self: end;
+        }
+        
+        i {
+            font-size: 7.5dvh;
+        }
+
+        i:hover {
+            color: $themepurplelight;
+        }
+    }
+
+    // footer:last-child {
+    //     margin-left:auto;
+    // }
+
+
     // section ul li unnessecary declarations for these sections
 
-    li {
-        list-style: none;
-        color: $textlight;
 
-    }
 
-    a {
-        color: $textlight;
-        text-decoration: none;
-    }
+    // li {
+    //     list-style: none;
+    //     color: $textlight;
+
+    // }
+
+    // a {
+    //     color: $textlight;
+    //     text-decoration: none;
+    // }
+
+    
 }
 
 // #projectsPage {    

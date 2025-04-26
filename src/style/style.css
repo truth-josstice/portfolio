@@ -171,21 +171,50 @@ main#projectsPage section#projectDetail h1 {
 }
 
 footer {
-  color: #829CBC;
+  display: flex;
+  flex-direction: row;
   width: 100dvw;
   height: 10dvh;
   background-color: #070f26;
   bottom: 0px;
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 2dvw;
 }
-footer li {
+footer #footerNav {
+  align-self: center;
+}
+footer #footerNav * {
+  color: #829CBC;
   list-style: none;
+  text-decoration: none;
+}
+footer #footerNav li a:hover {
+  color: #67507E;
+}
+footer #mailto {
+  align-self: center;
+}
+footer #mailto * {
   color: #829CBC;
 }
-footer a {
+footer #mailto a:hover {
+  color: #67507E;
+}
+footer #socialButtons {
+  display: flex;
+  margin-left: auto;
+  margin-right: 2dvw;
+  align-self: center;
+  justify-content: space-between;
+  width: 12%;
+}
+footer #socialButtons * {
   color: #829CBC;
-  text-decoration: none;
+  list-style: none;
+}
+footer #socialButtons i {
+  font-size: 7.5dvh;
+}
+footer #socialButtons i:hover {
+  color: #67507E;
 }/*# sourceMappingURL=style.css.map */
