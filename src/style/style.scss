@@ -1,5 +1,6 @@
 @use "./animations" as a;
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Tilt+Neon&display=swap');
 
 
 // @use './neonthumb' as nt;
@@ -45,10 +46,55 @@ header {
     width: 100dvw;
     height: 10dvh;
     background-color: $themebluedark;
+    justify-content: space-between;
     align-items: center;
+    color: $textlight;
+    font-family: 'Iceland', sans-serif;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
 
     img {
-        height: 10dvh;
+        aspect-ratio: 1/1;
+        height: 8dvh;
+        width: 4.5dvw;
+        margin-left: 2dvw;
+    }
+
+    section {
+        color: inherit;
+        font-family: inherit;
+        justify-self: flex-end;
+        margin-right: 2dvw;
+        margin-bottom: 0.5dvw;
+        // height: 7dvh;
+        
+        h1 {
+            color: inherit;
+            font-family: inherit;
+            font-size: 4dvh;
+            text-align: center;
+        }
+
+        h2 {
+            color: inherit;
+            font-family: inherit;
+            text-align: center;
+            font-size: x-large;
+        }
+    }
+    
+    nav {
+        font-family: inherit;
+        
+
+        button {
+            background-color: $textlight;
+        }
+
+        button:hover {
+            background-color: $themepurplelight;
+        }
     }
 }
 
@@ -108,6 +154,7 @@ main#projectsPage {
             height:30%;
             background-color: $themebluelight;
             box-shadow: 0 0 2px $themebluelight, inset 0 0 5px $themebluedark;
+            transition: transform 3s ease;
             
             a {
                 flex-basis: 100%;
@@ -127,7 +174,8 @@ main#projectsPage {
                 height: 55%;
                 width: 35%;
                 border-radius: 50%;
-                animation: neonglow 10s;
+                animation: neonGlow 10s ease-out;
+                // literally none of the below worked because I was struggling to remember how to add in partials!
                 // @include neon(rebeccapurple,royalblue,green,yellow,orange,red);
                 // @include nt;
                 // @include neon(royalblue, green, yellow, orange, red, rebeccapurple); not working for some reason, no errors but not compiling to css
@@ -139,7 +187,7 @@ main#projectsPage {
         }
 
         .projectCard:hover{
-            animation: cardhover 3s;
+            transform: scale(1.1);
         }
     }
 
@@ -162,12 +210,28 @@ main#projectsPage {
 
 
 footer {
+    color: $textlight;
     width: 100dvw;
     height: 10dvh;
     background-color: $themebluedark;
     bottom: 0px;
     position: absolute;   
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    // section ul li unnessecary declarations for these sections
+
+    li {
+        list-style: none;
+        color: $textlight;
+
+    }
+
+    a {
+        color: $textlight;
+        text-decoration: none;
+    }
 }
 
 // #projectsPage {    

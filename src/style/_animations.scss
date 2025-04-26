@@ -1,36 +1,48 @@
 $themebluelight: #829CBC;
 
-@keyframes neonglow {
+@keyframes neonGlow {
   0% {
     box-shadow: 0;
   }
   15% {
-    box-shadow: 0 0 3dvw rebeccapurple;
+    box-shadow: 0 0 2dvw rebeccapurple;
   }
   30% {
-    box-shadow: 0 0 3dvw royalblue;
+    box-shadow: 0 0 2dvw royalblue;
   }
   45% {
-    box-shadow: 0 0 3dvw green;
+    box-shadow: 0 0 2dvw green;
   }
   60% {
-    box-shadow: 0 0 3dvw yellow;
+    box-shadow: 0 0 2dvw yellow;
   }
   75% {
-    box-shadow: 0 0 3dvw orange;
+    box-shadow: 0 0 2dvw orange;
   }
   90% {
-    box-shadow: 0 0 3dvw red;
+    box-shadow: 0 0 2dvw red;
   }
 
 
 }
 
-@keyframes cardhover {
-  0% {
-    scale: 100%;
-  }
-  100% {
-    scale: 110%;
-  }
-}
+//this was overly complex, just used transform and transition values instead
+// @keyframes cardHover {
+//   from {
+//     scale: 100%;
+//   }
+
+//   to {
+//     scale: 110%;
+//   }
+// }
+
+// @keyframes reverseCardHover {
+//   from {
+//     scale: 110%;
+//   }
+
+//   to {
+//     scale: 100%;
+//   }
+// }
