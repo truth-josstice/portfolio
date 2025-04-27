@@ -76,6 +76,7 @@ header section nav {
 header section nav button {
   background-color: #070f26;
   text-align: center;
+  font-size: medium;
   color: #829CBC;
   transition: text-shadow, scale, 1s;
 }
