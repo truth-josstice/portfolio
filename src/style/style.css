@@ -217,7 +217,7 @@ footer #socialButtons {
   margin-left: auto;
   margin-right: 2dvw;
   align-self: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 20%;
 }
 footer #socialButtons * {
