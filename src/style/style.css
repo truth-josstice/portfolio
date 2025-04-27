@@ -244,6 +244,7 @@ footer #socialButtons i:hover {
   }
   header section nav button {
     transition: 0s;
+    font-size: small;
   }
   footer {
     flex-flow: column wrap;
