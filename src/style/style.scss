@@ -18,7 +18,7 @@
 //Breakpoint variable
 $breakpointMobile: 600px;
 $breakpointMinTablet: 601px;
-$breakpointMaxTablet: 1024px;
+$breakpointMaxTablet: 950px;
 
 //Colour themes
 $textdark: #0E192F;
@@ -106,11 +106,7 @@ header {
                 // width:40%;
             }
     
-            button:hover {
-                // background-color: $themepurplelight;
-                text-shadow: 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight;
-                scale: 110%;
-            }
+
         }
     }
     
@@ -205,9 +201,7 @@ main#projectsPage {
             }
         }
 
-        .projectCard:hover{
-            transform: scale(1.1);
-        }
+
     }
 
     section#projectDetail{
@@ -311,9 +305,7 @@ footer {
 
         }
 
-        i:hover {
-            color: $themepurplelight;
-        }
+
     }
 
     // footer:last-child {
@@ -353,15 +345,28 @@ footer {
     
 // }
 
+@media (min-width:$breakpointMaxTablet) {
+    
+    header section nav button:hover {
+        // background-color: $themepurplelight;
+        text-shadow: 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight;
+        scale: 110%;
+    }
+
+    .projectCard:hover{
+        transform: scale(1.1);
+    }
+
+    #socialButtons i:hover {
+        color: $themepurplelight;
+    }
+}
+
 
 @media (max-width: $breakpointMobile) {
     * {
         font-size: x-small;
     }  
-
-    *:hover {
-        pointer-events: none;
-    }
 
     header {
 
@@ -373,6 +378,7 @@ footer {
         section nav button {
             transition: 0s;
             font-size: small;
+            text-decoration: underline;
         }
     }
 

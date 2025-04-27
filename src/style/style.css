@@ -80,10 +80,6 @@ header section nav button {
   color: #829CBC;
   transition: text-shadow, scale, 1s;
 }
-header section nav button:hover {
-  text-shadow: 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E;
-  scale: 110%;
-}
 
 body {
   background-color: #141F3C;
@@ -160,9 +156,6 @@ main#projectsPage section#projectCards .projectCard img {
 main#projectsPage section#projectCards .projectCard div {
   width: 60%;
 }
-main#projectsPage section#projectCards .projectCard:hover {
-  transform: scale(1.1);
-}
 main#projectsPage section#projectDetail {
   text-align: center;
   width: 45dvw;
@@ -227,16 +220,22 @@ footer #socialButtons * {
 footer #socialButtons i {
   font-size: 7.5dvh;
 }
-footer #socialButtons i:hover {
-  color: #67507E;
-}
 
+@media (min-width: 950px) {
+  header section nav button:hover {
+    text-shadow: 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E;
+    scale: 110%;
+  }
+  .projectCard:hover {
+    transform: scale(1.1);
+  }
+  #socialButtons i:hover {
+    color: #67507E;
+  }
+}
 @media (max-width: 600px) {
   * {
     font-size: x-small;
-  }
-  *:hover {
-    pointer-events: none;
   }
   header img {
     height: 8dvh;
@@ -245,6 +244,7 @@ footer #socialButtons i:hover {
   header section nav button {
     transition: 0s;
     font-size: small;
+    text-decoration: underline;
   }
   footer {
     flex-flow: column wrap;
