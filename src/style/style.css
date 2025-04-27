@@ -26,12 +26,12 @@
 * {
   border: 0;
   margin: 0;
+  padding: 0;
   font-family: "Tilt Neon", sans-serif;
   color: #0E192F;
 }
 
 header {
-  display: flex;
   width: 100dvw;
   height: 10dvh;
   background-color: #070f26;
@@ -39,6 +39,7 @@ header {
   align-items: center;
   color: #829CBC;
   font-family: "Iceland", sans-serif;
+  display: flex;
   flex-flow: row wrap;
   margin: 0;
   padding: 0;
@@ -46,7 +47,7 @@ header {
 header img {
   aspect-ratio: 1/1;
   height: 8dvh;
-  width: 4.5dvw;
+  width: auto;
   margin-left: 2dvw;
 }
 header section {
@@ -68,14 +69,19 @@ header section h2 {
   text-align: center;
   font-size: x-large;
 }
-header nav {
-  font-family: inherit;
+header section nav {
+  margin-top: 0.5dvh;
+  text-align: center;
 }
-header nav button {
-  background-color: #829CBC;
+header section nav button {
+  background-color: #070f26;
+  text-align: center;
+  color: #829CBC;
+  transition: text-shadow, scale, 1s;
 }
-header nav button:hover {
-  background-color: #67507E;
+header section nav button:hover {
+  text-shadow: 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E;
+  scale: 110%;
 }
 
 body {
@@ -171,6 +177,7 @@ main#projectsPage section#projectDetail h1 {
 }
 
 footer {
+  color: #829CBC;
   display: flex;
   flex-direction: row;
   width: 100dvw;
@@ -178,24 +185,28 @@ footer {
   background-color: #070f26;
   bottom: 0px;
   position: absolute;
-  gap: 2dvw;
 }
 footer #footerNav {
   align-self: center;
+  margin-left: 0.5%;
+  color: #829CBC;
 }
 footer #footerNav * {
   color: #829CBC;
-  list-style: none;
   text-decoration: none;
 }
-footer #footerNav li a:hover {
+footer #footerNav a:hover {
   color: #67507E;
 }
 footer #mailto {
-  align-self: center;
+  margin-left: 1%;
+  margin-top: 0.5%;
 }
 footer #mailto * {
   color: #829CBC;
+}
+footer #mailto p {
+  display: none;
 }
 footer #mailto a:hover {
   color: #67507E;
@@ -206,7 +217,7 @@ footer #socialButtons {
   margin-right: 2dvw;
   align-self: center;
   justify-content: space-between;
-  width: 12%;
+  width: 20%;
 }
 footer #socialButtons * {
   color: #829CBC;
@@ -217,4 +228,55 @@ footer #socialButtons i {
 }
 footer #socialButtons i:hover {
   color: #67507E;
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: x-small;
+  }
+  *:hover {
+    pointer-events: none;
+  }
+  header img {
+    height: 8dvh;
+    width: auto;
+  }
+  header section nav button {
+    transition: 0s;
+  }
+  footer {
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 0;
+    height: 9dvh;
+  }
+  footer #footerNav {
+    flex-basis: 100%;
+    margin-left: 0;
+    padding: 0;
+    width: 45%;
+  }
+  footer #mailto {
+    order: 1;
+    width: 50%;
+    text-align: right;
+    margin-top: 1dvh;
+  }
+  footer #mailto a {
+    display: none;
+  }
+  footer #mailto p {
+    display: inline;
+  }
+  footer #socialButtons {
+    text-align: justify;
+    width: 50%;
+    margin-left: 0;
+    gap: 2dvw;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  footer #socialButtons a i {
+    font-size: medium;
+  }
 }/*# sourceMappingURL=style.css.map */

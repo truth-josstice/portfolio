@@ -15,6 +15,11 @@
 //       inset 0 0 0.1dvw $col-1;
 //   }
 
+//Breakpoint variable
+$breakpointMobile: 600px;
+$breakpointMinTablet: 601px;
+$breakpointMaxTablet: 1024px;
+
 //Colour themes
 $textdark: #0E192F;
 $textlight: #829CBC;
@@ -37,12 +42,12 @@ $themepurplelight: #67507E;
 * {
     border: 0;
     margin: 0;
+    padding: 0;
     font-family: "Tilt Neon", sans-serif; //test
     color: $textdark;
 }
 
 header {
-    display: flex;
     width: 100dvw;
     height: 10dvh;
     background-color: $themebluedark;
@@ -50,6 +55,7 @@ header {
     align-items: center;
     color: $textlight;
     font-family: 'Iceland', sans-serif;
+    display: flex;
     flex-flow: row wrap;
     margin: 0;
     padding: 0;
@@ -57,7 +63,7 @@ header {
     img {
         aspect-ratio: 1/1;
         height: 8dvh;
-        width: 4.5dvw;
+        width: auto;
         margin-left: 2dvw;
     }
 
@@ -67,6 +73,7 @@ header {
         justify-self: flex-end;
         margin-right: 2dvw;
         margin-bottom: 0.5dvw;
+        // width: 30%;
         // height: 7dvh;
         
         h1 {
@@ -82,20 +89,31 @@ header {
             text-align: center;
             font-size: x-large;
         }
+    
+        nav {
+            // font-family: inherit;
+            margin-top: 0.5dvh;
+            text-align: center;
+
+            button {
+                background-color: $themebluedark;
+                text-align: center;
+                color: $textlight;
+                transition: text-shadow, scale, 1s;
+                // padding: 0.25%;
+                // border-radius: 25%;
+                // width:40%;
+            }
+    
+            button:hover {
+                // background-color: $themepurplelight;
+                text-shadow: 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight;
+                scale: 110%;
+            }
+        }
     }
     
-    nav {
-        font-family: inherit;
-        
-
-        button {
-            background-color: $textlight;
-        }
-
-        button:hover {
-            background-color: $themepurplelight;
-        }
-    }
+    
 }
 
 
@@ -210,7 +228,8 @@ main#projectsPage {
 
 
 footer {
-    // color: $textlight;
+    color: $textlight;
+    // margin-left: 0;
     display: flex;
     flex-direction: row;
     width: 100dvw;
@@ -218,34 +237,50 @@ footer {
     background-color: $themebluedark;
     bottom: 0px;
     position: absolute;   
-    
     // justify-content: flex-start;
-    gap: 2dvw;
+    // gap: 2dvw;
     // align-items: center;
+
+    // @media (max-width: $breakpoint-mobile) {
+    //     margin-left: 0;
+    // }
+
+
 
     #footerNav {
         align-self: center;
+        margin-left: 0.5%;
+        color: $textlight;
+
 
         * {
         color: $textlight;
-        list-style: none;
         text-decoration: none;
         // margin-top: 0.2dvh;
         }
         
-        li a:hover {
+
+
+        a:hover {
             color: $themepurplelight;
         }
 
     }
 
     #mailto {
-        align-self: center;
+        // align-self: center;
+        // text-align: center;
+        margin-left: 1%;
+        margin-top: 0.5%;
 
         * {
             color: $textlight;
+            // text-align: center;
         }
 
+        p {
+            display: none;
+        }
         a:hover{
             color: $themepurplelight;
         }
@@ -258,7 +293,9 @@ footer {
         margin-right: 2dvw;
         align-self: center;
         justify-content: space-between;
-        width: 12%;
+        width: 20%;
+
+        
 
         * {
         color: $textlight;
@@ -268,6 +305,9 @@ footer {
         
         i {
             font-size: 7.5dvh;
+
+
+
         }
 
         i:hover {
@@ -307,4 +347,80 @@ footer {
 //     background-color: $themebluedark;
 //     color: $textlight;
 // }
+
+// @media screen {
+    
+// }
+
+
+@media (max-width: $breakpointMobile) {
+    * {
+        font-size: x-small;
+    }  
+
+    *:hover {
+        pointer-events: none;
+    }
+
+    header {
+
+        img {
+            height: 8dvh;
+            width: auto;
+        }
+
+        section nav button {
+            transition: 0s;
+        }
+    }
+
+    footer {    
+        flex-flow: column wrap;
+        // align-items: center;
+        // justify-content: ;
+        margin: 0;
+        padding: 0;
+        height: 9dvh;
+
+        #footerNav {
+            flex-basis: 100%;
+            margin-left: 0;
+            padding: 0;
+            width:45%;
+            // width: auto;
+        }
+
+        #mailto {
+            order: 1;
+            width:50%;
+            text-align: right;
+            margin-top: 1dvh;
+
+            a {
+                display: none;
+            }
+            
+            p {
+                display: inline;
+            }
+        }
+        
+        #socialButtons {
+            text-align: justify;
+            width: 50%;
+            margin-left: 0;
+            gap: 2dvw;
+            // flex-basis: 50%;
+            align-items: center;
+            justify-content: flex-end;
+            a i {
+                font-size: medium;
+                // width: 60%;
+                // text-align: 
+            }
+        }
+        
+        
+    }
+}
 
