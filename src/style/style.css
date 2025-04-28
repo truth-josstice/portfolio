@@ -100,7 +100,7 @@ body {
   height: 70dvh;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: #4C3663 0px 0px 25px;
+  box-shadow: #4C3663 0px 0px 25px, inset #581519 0px 0px 25px;
 }
 #projectsPage #projectCards {
   text-align: center;
@@ -248,9 +248,6 @@ footer #socialButtons i {
   * {
     font-size: small;
   }
-  main {
-    height: auto;
-  }
   header {
     font-size: x-small;
     padding-bottom: 2%;
@@ -295,7 +292,6 @@ footer #socialButtons i {
     display: inline;
   }
   footer #socialButtons {
-    text-align: justify;
     width: 50%;
     margin-left: 0;
     gap: 2dvw;

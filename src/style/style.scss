@@ -133,7 +133,7 @@ body {
         height: 70dvh;
         border-radius: 25px;
         overflow:hidden;
-        box-shadow: #4C3663 0px 0px 25px;
+        box-shadow: #4C3663 0px 0px 25px, inset $themeredmiddark 0px 0px 25px;
     }
 
     #projectCards{ 
@@ -151,7 +151,7 @@ body {
         width:45dvw;
         height: 70dvh;
         border-radius: 25px;
-        // box-shadow: #4C3663 0px 0px 25px;
+        // box-shadow: inset $themeredmiddark 0px 0px 12.5px;
         
         h1 {
             margin-top: 1dvh;
@@ -384,9 +384,9 @@ footer {
         font-size: small;
     }  
 
-    main {
-        height:auto;
-    }
+    // main {
+    //     // height:auto;
+    // }
 
     header {
         font-size: x-small;
@@ -443,7 +443,7 @@ footer {
         
         #socialButtons {
             // padding-top: 2%;
-            text-align: justify;
+            // text-align: justify;
             width: 50%;
             margin-left: 0;
             gap: 2dvw;
