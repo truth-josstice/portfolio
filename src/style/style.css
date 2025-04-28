@@ -88,13 +88,14 @@ body {
 }
 
 #projectsPage {
+  height: 100%;
   margin: 0;
   padding: 2dvw;
   padding-top: 5dvh;
   display: flex;
   justify-content: space-around;
 }
-#projectsPage #boxBorder {
+#projectsPage .boxBorder {
   background-color: #384363;
   width: 45dvw;
   height: 70dvh;
@@ -119,6 +120,7 @@ body {
   border-radius: 25px;
 }
 #projectsPage #projectCards h1 {
+  order: -2;
   margin-top: 1dvh;
   font-size: x-large;
   flex-basis: 100%;
@@ -167,18 +169,45 @@ body {
   margin-left: 1%;
   height: 55%;
 }
+#projectsPage #projectCards #portfolioCard {
+  order: -1;
+}
 #projectsPage #projectDetail {
+  gap: 2%;
   text-align: center;
   width: 45dvw;
   height: 70dvh;
   background-color: #384363;
   border-radius: 25px;
   box-shadow: #4C3663 0px 0px 25px;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #581519 #384363;
+  background-color: #384363;
 }
 #projectsPage #projectDetail h1 {
+  height: auto;
   margin-top: 1dvh;
   font-size: x-large;
   text-shadow: 0 0 0.25dvw #829CBC;
+}
+#projectsPage #projectDetail .projectDetails {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 100%;
+  row-gap: 2dvh;
+}
+#projectsPage #projectDetail .projectInfo {
+  padding: 1dvh;
+  width: 85%;
+  margin: auto;
+  box-shadow: inset 0 0 5px #380407, 0 0 5px #B76E72;
+  border-radius: 25px;
+}
+#projectsPage #projectDetail .projectInfo p {
+  font-size: large;
 }
 
 footer {
