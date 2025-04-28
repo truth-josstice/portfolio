@@ -26,23 +26,12 @@ $themebluelight: #829CBC;
 
 }
 
-//this was overly complex, just used transform and transition values instead
-// @keyframes cardHover {
-//   from {
-//     scale: 100%;
-//   }
+@mixin neonEffect($col-1, $col-2) {
+  $main: $col-1;
+  $glow: $col-2;
 
-//   to {
-//     scale: 110%;
-//   }
-// }
-
-// @keyframes reverseCardHover {
-//   from {
-//     scale: 110%;
-//   }
-
-//   to {
-//     scale: 100%;
-//   }
-// }
+  box-shadow: 
+    0 0 5px $main, 0 0 15px $main, 
+    0 0 20px $main, 0 0 40px $glow,
+    0 0 60px $glow, 0 0 98px $glow;
+}

@@ -87,6 +87,46 @@ body {
   height: 100%;
 }
 
+#homePage {
+  height: 100%;
+  margin: 0;
+  padding: 2dvw;
+  padding-top: 4dvh;
+  display: flex;
+  justify-content: space-around;
+}
+#homePage .boxBorder {
+  width: 45dvw;
+  height: 71.5dvh;
+}
+#homePage #profilePhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70dvh;
+  width: 45dvw;
+}
+#homePage #profilePhoto img {
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #67507E, 0 0 15px #67507E, 0 0 20px #67507E, 0 0 40px #B76E72, 0 0 60px #B76E72, 0 0 98px #B76E72;
+}
+#homePage #aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 71.5dvh;
+  width: 45dvw;
+  border-radius: 25px;
+  background-color: #384363;
+  box-shadow: #4C3663 0px 0px 25px;
+}
+#homePage #aboutMe * {
+  padding: 1%;
+  text-shadow: 0 0 0.25dvw #829CBC;
+}
+
 #projectsPage {
   height: 100%;
   margin: 0;
@@ -96,7 +136,6 @@ body {
   justify-content: space-around;
 }
 #projectsPage .boxBorder {
-  background-color: #384363;
   width: 45dvw;
   height: 71.5dvh;
   border-radius: 25px;
@@ -110,7 +149,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   row-gap: 2dvh;
-  overflow: scroll;
+  overflow: visible;
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: #581519 #384363;
@@ -175,22 +214,25 @@ body {
   order: -1;
 }
 #projectsPage #projectDetail {
-  gap: 2%;
   text-align: center;
-  width: 45dvw;
-  height: 70dvh;
-  background-color: #384363;
-  border-radius: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 2dvh;
   overflow: scroll;
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: #581519 #384363;
   background-color: #384363;
+  width: 45dvw;
+  height: 70dvh;
+  border-radius: 25px;
+  padding-bottom: 1.5dvh;
 }
 #projectsPage #projectDetail h1 {
   height: auto;
   margin-top: 1dvh;
-  margin-bottom: 1dvh;
   font-size: x-large;
   text-shadow: 0 0 0.25dvw #829CBC;
 }
@@ -200,6 +242,7 @@ body {
   justify-content: center;
   width: 100%;
   row-gap: 2dvh;
+  margin: 0;
 }
 #projectsPage #projectDetail .projectInfo {
   padding: 1dvh;
@@ -347,6 +390,8 @@ footer #socialButtons i {
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 2dvh;
+    padding-bottom: 0;
+    background-color: #384363;
   }
   #projectsPage .boxBorder .projectCard, #projectsPage #projectCards .projectCard {
     width: 90%;
