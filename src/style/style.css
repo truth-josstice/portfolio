@@ -101,7 +101,7 @@ body {
   height: 70dvh;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: #4C3663 0px 0px 25px, inset #581519 0px 0px 25px;
+  box-shadow: #4C3663 0px 0px 25px;
 }
 #projectsPage #projectCards {
   text-align: center;
