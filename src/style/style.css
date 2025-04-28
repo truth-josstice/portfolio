@@ -263,7 +263,7 @@ footer #socialButtons i {
     flex-flow: column wrap;
     margin: 0;
     padding: 0;
-    height: 9dvh;
+    height: auto;
     position: sticky;
   }
   footer * {
