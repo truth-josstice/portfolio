@@ -266,6 +266,7 @@ footer #socialButtons i {
     justify-content: center;
     margin-top: 0;
     padding: 0;
+    padding-bottom: 2dvh;
     height: 8dvh;
     position: relative;
     bottom: 0px;
@@ -283,7 +284,7 @@ footer #socialButtons i {
     order: 1;
     width: 50%;
     text-align: right;
-    margin-top: 1dvh;
+    margin-top: 0.5dvh;
   }
   footer #mailto a {
     display: none;
@@ -295,7 +296,6 @@ footer #socialButtons i {
     width: 50%;
     margin-left: 0;
     gap: 2dvw;
-    align-items: center;
     justify-content: flex-end;
   }
   footer #socialButtons a i {
