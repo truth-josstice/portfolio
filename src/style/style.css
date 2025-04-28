@@ -84,6 +84,7 @@ header section nav button {
 body {
   background-color: #141F3C;
   padding-bottom: 0;
+  height: 100%;
 }
 
 #projectsPage {
@@ -164,7 +165,7 @@ body {
 #projectsPage #projectCards .projectCard div {
   width: 60%;
   margin-left: 1%;
-  height: auto;
+  height: 55%;
 }
 #projectsPage #projectDetail {
   text-align: center;
@@ -247,8 +248,12 @@ footer #socialButtons i {
   * {
     font-size: small;
   }
+  main {
+    height: auto;
+  }
   header {
     font-size: x-small;
+    padding-bottom: 2%;
   }
   header img {
     height: 8dvh;
@@ -261,16 +266,18 @@ footer #socialButtons i {
   }
   footer {
     flex-flow: column wrap;
-    margin: 0;
+    justify-content: center;
+    margin-top: 0;
     padding: 0;
     height: 8dvh;
-    position: sticky;
+    position: relative;
+    bottom: 0px;
   }
   footer * {
-    font-size: x-small;
+    font-size: xx-small;
   }
   footer #footerNav {
-    flex-basis: 100%;
+    flex-basis: 80%;
     margin-left: 0;
     padding: 0;
     width: 45%;
@@ -288,7 +295,6 @@ footer #socialButtons i {
     display: inline;
   }
   footer #socialButtons {
-    padding-top: 2%;
     text-align: justify;
     width: 50%;
     margin-left: 0;
