@@ -337,7 +337,7 @@ footer #socialButtons i {
     overflow: scroll;
     padding: 2dvh;
   }
-  #projectsPage #boxBorder, #projectsPage #projectCards {
+  #projectsPage .boxBorder, #projectsPage #projectCards {
     height: auto;
     width: 90dvw;
     overflow: visible;
@@ -345,13 +345,13 @@ footer #socialButtons i {
     padding-top: 0;
     margin-bottom: 2dvh;
   }
-  #projectsPage #boxBorder .projectCard, #projectsPage #projectCards .projectCard {
+  #projectsPage .boxBorder .projectCard, #projectsPage #projectCards .projectCard {
     width: 90%;
     height: 35%;
     padding: 1%;
     padding-bottom: 4%;
   }
-  #projectsPage #boxBorder .projectCard h3, #projectsPage #projectCards .projectCard h3 {
+  #projectsPage .boxBorder .projectCard h3, #projectsPage #projectCards .projectCard h3 {
     margin-bottom: 3%;
   }
   #projectsPage #projectDetail {
