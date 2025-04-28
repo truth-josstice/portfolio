@@ -86,14 +86,14 @@ body {
   padding-bottom: 0;
 }
 
-main#projectsPage {
+#projectsPage {
   margin: 0;
   padding: 2dvw;
   padding-top: 5dvh;
   display: flex;
   justify-content: space-around;
 }
-main#projectsPage section#boxBorder {
+#projectsPage #boxBorder {
   background-color: #384363;
   width: 45dvw;
   height: 70dvh;
@@ -101,7 +101,7 @@ main#projectsPage section#boxBorder {
   overflow: hidden;
   box-shadow: #4C3663 0px 0px 25px;
 }
-main#projectsPage section#projectCards {
+#projectsPage #projectCards {
   text-align: center;
   display: flex;
   flex-flow: row wrap;
@@ -117,13 +117,13 @@ main#projectsPage section#projectCards {
   height: 70dvh;
   border-radius: 25px;
 }
-main#projectsPage section#projectCards h1 {
+#projectsPage #projectCards h1 {
   margin-top: 1dvh;
   font-size: x-large;
   flex-basis: 100%;
   text-shadow: 0 0 0.25dvw #829CBC;
 }
-main#projectsPage section#projectCards .projectCard {
+#projectsPage #projectCards .projectCard {
   display: flex;
   flex-flow: row wrap;
   text-align: center;
@@ -135,17 +135,25 @@ main#projectsPage section#projectCards .projectCard {
   box-shadow: 0 0 2px #515D7E, inset 0 0 5px #070f26;
   transition: transform 3s ease;
 }
-main#projectsPage section#projectCards .projectCard a {
+#projectsPage #projectCards .projectCard .detailLink {
   flex-basis: 100%;
   text-decoration: none;
   height: 10%;
 }
-main#projectsPage section#projectCards .projectCard h3 {
+#projectsPage #projectCards .projectCard .imageLink {
+  height: auto;
+  width: 35%;
+}
+#projectsPage #projectCards .projectCard .imageLink img {
+  width: 100%;
+  height: auto;
+}
+#projectsPage #projectCards .projectCard h3 {
   height: 10%;
   flex-basis: 100%;
   padding-top: 2%;
 }
-main#projectsPage section#projectCards .projectCard img {
+#projectsPage #projectCards .projectCard img {
   background-color: #141F3C;
   margin-left: 10px;
   height: 55%;
@@ -153,10 +161,12 @@ main#projectsPage section#projectCards .projectCard img {
   border-radius: 50%;
   animation: neonGlow 10s ease-out;
 }
-main#projectsPage section#projectCards .projectCard div {
+#projectsPage #projectCards .projectCard div {
   width: 60%;
+  margin-left: 1%;
+  height: auto;
 }
-main#projectsPage section#projectDetail {
+#projectsPage #projectDetail {
   text-align: center;
   width: 45dvw;
   height: 70dvh;
@@ -164,7 +174,7 @@ main#projectsPage section#projectDetail {
   border-radius: 25px;
   box-shadow: #4C3663 0px 0px 25px;
 }
-main#projectsPage section#projectDetail h1 {
+#projectsPage #projectDetail h1 {
   margin-top: 1dvh;
   font-size: x-large;
   text-shadow: 0 0 0.25dvw #829CBC;
@@ -235,6 +245,9 @@ footer #socialButtons i {
 }
 @media (max-width: 600px) {
   * {
+    font-size: small;
+  }
+  header {
     font-size: x-small;
   }
   header img {
@@ -251,6 +264,10 @@ footer #socialButtons i {
     margin: 0;
     padding: 0;
     height: 9dvh;
+    position: sticky;
+  }
+  footer * {
+    font-size: x-small;
   }
   footer #footerNav {
     flex-basis: 100%;
@@ -271,6 +288,7 @@ footer #socialButtons i {
     display: inline;
   }
   footer #socialButtons {
+    padding-top: 2%;
     text-align: justify;
     width: 50%;
     margin-left: 0;
@@ -280,5 +298,36 @@ footer #socialButtons i {
   }
   footer #socialButtons a i {
     font-size: medium;
+  }
+  #projectsPage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+  }
+  #projectsPage #boxBorder, #projectsPage #projectCards {
+    height: auto;
+    width: 90dvw;
+    overflow: visible;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 2dvh;
+  }
+  #projectsPage #boxBorder .projectCard, #projectsPage #projectCards .projectCard {
+    width: 90%;
+    height: 35%;
+    padding: 1%;
+    padding-bottom: 4%;
+  }
+  #projectsPage #boxBorder .projectCard h3, #projectsPage #projectCards .projectCard h3 {
+    margin-bottom: 3%;
+  }
+  #projectsPage #projectDetail {
+    width: 90dvw;
+    overflow: visible;
+    height: auto;
+    padding: 1%;
+    padding-bottom: 4%;
   }
 }/*# sourceMappingURL=style.css.map */
