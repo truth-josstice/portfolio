@@ -95,10 +95,6 @@ body {
   display: flex;
   justify-content: space-around;
 }
-#homePage .boxBorder {
-  width: 45dvw;
-  height: 71.5dvh;
-}
 #homePage #profilePhoto {
   display: flex;
   justify-content: center;
@@ -125,6 +121,24 @@ body {
 #homePage #aboutMe * {
   padding: 1%;
   text-shadow: 0 0 0.25dvw #829CBC;
+}
+#homePage #aboutMe p {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+#homePage #aboutMe #progLang {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#homePage #aboutMe #progLang .badgeRows {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  scale: 150%;
 }
 
 #projectsPage {
@@ -251,6 +265,214 @@ body {
   box-shadow: inset 0 0 5px #380407, 0 0 5px #91494D;
   border-radius: 25px;
   background-color: #515D7E;
+}
+
+#workHistoryPage {
+  height: 100%;
+  padding: 2dvw;
+  padding-top: 4dvh;
+  display: flex;
+  justify-content: space-around;
+}
+#workHistoryPage #workHistory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 65dvw;
+  height: 71.5dvh;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #384363;
+  box-shadow: #4C3663 0px 0px 25px;
+  text-shadow: 0 0 0.25dvw #829CBC;
+}
+#workHistoryPage #workHistory h1 {
+  margin: auto;
+  padding-left: 2%;
+  flex-basis: 100%;
+  height: auto;
+}
+#workHistoryPage #workHistory h3 {
+  margin-top: -1%;
+  padding-left: 2%;
+  flex-basis: 100%;
+  height: auto;
+}
+#workHistoryPage #workHistory .workCard {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  height: 80%;
+  width: 30%;
+  background-color: #515D7E;
+  border-radius: 25px;
+  box-shadow: 0 0 5px #91494D, inset 0 0 5px #380407;
+}
+#workHistoryPage #workHistory .workCard a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 15%;
+  align-self: center;
+}
+#workHistoryPage #workHistory .workCard #ZVlogo {
+  margin-top: 10%;
+  align-self: center;
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+}
+#workHistoryPage #workHistory .workCard #brooksfield {
+  align-self: center;
+  aspect-ratio: 1/0.3;
+  height: auto;
+  width: 90%;
+  margin-top: 10%;
+}
+#workHistoryPage #workHistory .workCard #placeH {
+  margin-top: 10%;
+  aspect-ratio: 1/1;
+  height: 100%;
+}
+#workHistoryPage #workHistory .workCard .jobDescript {
+  font-size: 14px;
+  margin-top: 5%;
+  padding: 2%;
+}
+#workHistoryPage #workHistory .workCard .jobDescript p {
+  margin-top: 0.5%;
+  padding-left: 2%;
+}
+#workHistoryPage #workHistory .workCard .jobDescript ul {
+  font-weight: bold;
+  padding-left: 8%;
+}
+#workHistoryPage #documents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: 25dvw;
+  height: 71.5dvh;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #384363;
+  box-shadow: #4C3663 0px 0px 25px;
+  text-shadow: 0 0 0.25dvw #829CBC;
+}
+#workHistoryPage #documents h1 {
+  padding-top: 2%;
+  text-align: center;
+  padding-left: 2%;
+  flex-basis: 100%;
+  height: 5%;
+}
+#workHistoryPage #documents .documentCard {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 2%;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 35%;
+  border-radius: 25px;
+  background-color: #515D7E;
+  box-shadow: 0 0 5px #91494D, inset 0 0 5px #380407;
+}
+#workHistoryPage #documents .documentCard .imageLink {
+  width: 35%;
+}
+#workHistoryPage #documents .documentCard .imageLink img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 10%;
+}
+#workHistoryPage #documents .documentCard div {
+  width: 60%;
+  margin-left: 2%;
+  height: 40%;
+}
+#workHistoryPage #documents .documentCard div p {
+  margin-top: 2%;
+}
+
+#contactMePage {
+  height: 100%;
+  padding: 2dvw;
+  padding-top: 4dvh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contactMePage #contactForm {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2%;
+  border-radius: 25px;
+  height: auto;
+  width: 30%;
+  background-color: #384363;
+}
+#contactMePage #contactForm label {
+  flex-basis: 100%;
+  height: 10%;
+}
+#contactMePage #contactForm input {
+  width: 90%;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+#contactMePage #contactForm textarea {
+  resize: none;
+  width: 90%;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+#contactMePage #contactForm #submit {
+  width: 30%;
+}
+#contactMePage .contactPhoto {
+  margin-top: 4%;
+  width: 25%;
+  height: 50%;
+  text-align: center;
+}
+#contactMePage .contactPhoto * {
+  color: #829CBC;
+  text-shadow: 0 0 5px #732A2D, 0 0 2px #B76E72;
+}
+#contactMePage .contactPhoto img {
+  filter: grayscale(1);
+  border-radius: 50%;
+  max-width: 100%;
+}
+#contactMePage .contactPhoto h1 {
+  padding-top: 2%;
+}
+
+#underConstructionPage {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+}
+#underConstructionPage * {
+  text-shadow: 0 0 5px #4C3663, 0 0 15px #4C3663, 0 0 20px #4C3663, 0 0 40px #37204F, 0 0 60px #37204F, 0 0 98px #37204F;
+  color: #67507E;
+  font-family: "Iceland", sans-serif;
+  height: 50%;
+  padding: 5%;
+}
+#underConstructionPage h1 {
+  margin-top: 2%;
 }
 
 footer {
@@ -408,5 +630,9 @@ footer #socialButtons i {
     height: auto;
     padding: 1%;
     padding-bottom: 4%;
+  }
+  .unscrollFooter {
+    position: absolute;
+    bottom: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
