@@ -45,3 +45,58 @@ $themebluelight: #829CBC;
     0 0 20px $main, 0 0 40px $glow,
     0 0 60px $glow, 0 0 98px $glow;
 }
+
+@keyframes pickAxe {
+
+  80% {
+    transform: rotate(-0.125turn);
+  }
+  95% {
+    translate: -5px;
+  }
+  97% {
+    translate: 5px;
+  }
+  99% {
+    translate: -5px;
+  }
+  100% {
+    translate: 5px;   
+  }
+
+}
+
+@keyframes tuxedoCat {
+  25% {
+    translate: 50px;
+  }
+  50% {
+    translate: 60px;
+  }
+  75% {
+    translate: 100px;
+  }
+  100% {
+    translate: -250px;
+  }
+}
+
+@mixin neonEffectMobile($col-1, $col-2) {
+  $main: $col-1;
+  $glow: $col-2;
+
+  box-shadow: 
+    0 0 2px $main, 0 0 6px $main, 
+    0 0 8px $main, 0 0 16px $glow,
+    0 0 24px $glow, 0 0 48px $glow;
+}
+
+@mixin neonEffectTablet($col-1, $col-2) {
+  $main: $col-1;
+  $glow: $col-2;
+
+  box-shadow: 
+    0 0 5px $main, 0 0 15px $main, 
+    0 0 20px $main, 0 0 40px $glow,
+    0 0 60px $glow, 0 0 98px $glow;
+}

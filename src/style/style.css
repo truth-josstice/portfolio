@@ -23,6 +23,37 @@
     box-shadow: 0 0 2dvw red;
   }
 }
+@keyframes pickAxe {
+  80% {
+    transform: rotate(-0.125turn);
+  }
+  95% {
+    translate: -5px;
+  }
+  97% {
+    translate: 5px;
+  }
+  99% {
+    translate: -5px;
+  }
+  100% {
+    translate: 5px;
+  }
+}
+@keyframes tuxedoCat {
+  25% {
+    translate: 50px;
+  }
+  50% {
+    translate: 60px;
+  }
+  75% {
+    translate: 100px;
+  }
+  100% {
+    translate: -250px;
+  }
+}
 * {
   border: 0;
   margin: 0;
@@ -89,6 +120,7 @@ body {
 
 #homePage {
   height: 100%;
+  overflow: hidden;
   margin: 0;
   padding: 2dvw;
   padding-top: 4dvh;
@@ -139,6 +171,13 @@ body {
   flex-wrap: wrap;
   width: 100%;
   scale: 150%;
+}
+#homePage #tuxCat {
+  rotate: 90deg;
+  position: fixed;
+  top: 10%;
+  left: -250px;
+  animation: tuxedoCat 10s linear;
 }
 
 #projectsPage {
@@ -459,7 +498,7 @@ body {
 #underConstructionPage {
   height: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   font-size: 48px;
@@ -473,6 +512,14 @@ body {
 }
 #underConstructionPage h1 {
   margin-top: 2%;
+  line-height: auto;
+}
+#underConstructionPage #pickAxe {
+  order: -1;
+  width: auto;
+  height: auto;
+  filter: grayscale(0.6);
+  animation: pickAxe 1s infinite linear;
 }
 
 footer {
@@ -546,6 +593,7 @@ footer #socialButtons i {
     font-size: small;
   }
   header {
+    padding-top: 2%;
     font-size: x-small;
     padding-bottom: 2%;
   }
@@ -573,7 +621,7 @@ footer #socialButtons i {
   }
   footer #footerNav {
     flex-basis: 80%;
-    margin-left: 0;
+    margin-left: 1%;
     padding: 0;
     width: 45%;
   }
@@ -597,6 +645,54 @@ footer #socialButtons i {
   }
   footer #socialButtons a i {
     font-size: medium;
+  }
+  #homePage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+  }
+  #homePage #profilePhoto {
+    width: 80dvw;
+    height: auto;
+    margin: auto;
+    padding: 5%;
+    padding-bottom: 10%;
+  }
+  #homePage #profilePhoto img {
+    max-width: 100%;
+    box-shadow: 0 0 2px #67507E, 0 0 6px #67507E, 0 0 8px #67507E, 0 0 16px #B76E72, 0 0 24px #B76E72, 0 0 48px #B76E72;
+  }
+  #homePage #aboutMe {
+    height: auto;
+    width: 90dvw;
+    overflow: visible;
+    margin-top: 0;
+    padding-top: 1%;
+    margin-bottom: 2dvh;
+    padding-bottom: 1%;
+    background-color: #384363;
+  }
+  #homePage #aboutMe * {
+    font-size: 14px;
+  }
+  #homePage #progLang {
+    max-width: 70%;
+  }
+  #homePage #progLang .badgeRows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  #homePage #progLang .badgeRows * {
+    margin: 1%;
+    gap: 0;
+    height: auto;
+    width: 20%;
+  }
+  #homePage #tuxCat {
+    scale: 80%;
   }
   #projectsPage {
     flex-flow: column wrap;
@@ -631,8 +727,111 @@ footer #socialButtons i {
     padding: 1%;
     padding-bottom: 4%;
   }
+  #workHistoryPage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+  }
+  #workHistoryPage h3 {
+    font-size: medium;
+  }
+  #workHistoryPage #workHistory {
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 87.5dvw;
+    overflow: visible;
+    padding: 2dvw;
+    padding-bottom: 4dvw;
+    margin: auto;
+    margin-bottom: 2dvh;
+    background-color: #384363;
+  }
+  #workHistoryPage #workHistory h1 {
+    width: 100%;
+    text-align: left;
+    font-size: x-large;
+  }
+  #workHistoryPage #workHistory .workCard {
+    margin: auto;
+    width: 88%;
+    margin-top: 5%;
+    padding: 3%;
+  }
+  #workHistoryPage #workHistory .workCard a {
+    height: auto;
+  }
+  #workHistoryPage #workHistory .workCard #ZVlogo {
+    margin-top: -5%;
+    margin-bottom: -10%;
+  }
+  #workHistoryPage #workHistory .workCard #placeH {
+    scale: 60%;
+    height: auto;
+    margin-top: -15%;
+    margin-bottom: -20%;
+  }
+  #workHistoryPage #documents {
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 87.5dvw;
+    padding: 2dvw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #workHistoryPage #documents .documentCard {
+    width: 88%;
+    padding: 3%;
+    margin: 2%;
+  }
+  #workHistoryPage #documents .documentCard .imageLink {
+    scale: 80%;
+  }
+  #contactMePage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+  }
+  #contactMePage a, #contactMePage h1 {
+    font-size: large;
+  }
+  #contactMePage .contactPhoto {
+    width: 80dvw;
+    margin-bottom: 5%;
+  }
+  #contactMePage #contactForm {
+    order: -1;
+    width: 80dvw;
+    padding: 5dvw;
+    margin-bottom: 5%;
+  }
+  #underConstructionPage {
+    flex-direction: row wrap;
+  }
+  #underConstructionPage h1 {
+    line-height: auto;
+    font-size: xx-large;
+    height: auto;
+    width: auto;
+    align-self: center;
+    margin: auto;
+  }
+  #underConstructionPage h3 {
+    line-height: auto;
+    font-size: x-large;
+    height: auto;
+  }
+  #underConstructionPage #pickAxe {
+    scale: 50%;
+    width: auto;
+  }
   .unscrollFooter {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
