@@ -462,6 +462,7 @@ body {
   height: auto;
   width: 30%;
   background-color: #384363;
+  box-shadow: #4C3663 0px 0px 25px;
 }
 #contactMePage #contactForm label {
   flex-basis: 100%;
