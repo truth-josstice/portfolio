@@ -152,6 +152,8 @@ body {
 }
 #homePage #aboutMe * {
   padding: 1%;
+}
+#homePage #aboutMe h1 {
   text-shadow: 0 0 0.25dvw #829CBC;
 }
 #homePage #aboutMe p {
