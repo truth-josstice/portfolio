@@ -74,6 +74,7 @@ header {
   flex-flow: row wrap;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 header img {
   aspect-ratio: 1/1;
@@ -161,11 +162,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 85%;
-  width: 85%;
+  width: 90%;
   border-radius: 25px;
   background-color: #515D7E;
   box-shadow: 0 0 5px #91494D, inset 0 0 5px #380407;
   margin-bottom: 2%;
+  padding-bottom: 2%;
 }
 #homePage #aboutMe #wrapper h3, #homePage #aboutMe #wrapper p {
   text-align: center;
@@ -592,6 +594,7 @@ footer {
   background-color: #070f26;
   bottom: 0px;
   position: absolute;
+  overflow: hidden;
 }
 footer #footerNav {
   align-self: center;
