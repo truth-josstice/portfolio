@@ -581,7 +581,7 @@ footer #socialButtons i {
   font-size: 7.5dvh;
 }
 
-@media (min-width: 950px) {
+@media only screen and (min-width: 951px) {
   header section nav button:hover {
     text-shadow: 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E;
     scale: 110%;
@@ -596,7 +596,224 @@ footer #socialButtons i {
     font-size: large;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (min-width: 601px) and (max-width: 950px) {
+  * {
+    font-size: medium;
+  }
+  footer {
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+    padding-bottom: 2dvh;
+    height: 8dvh;
+    position: relative;
+    bottom: 0px;
+  }
+  footer #footerNav {
+    flex-basis: 80%;
+    margin-left: 1%;
+    padding: 0;
+    width: 45%;
+  }
+  footer #mailto {
+    order: 1;
+    width: 50%;
+    text-align: right;
+    margin-top: 0.5dvh;
+  }
+  footer #mailto a {
+    display: none;
+  }
+  footer #mailto p {
+    display: inline;
+  }
+  footer #socialButtons {
+    width: 50%;
+    margin-left: 0;
+    gap: 2dvw;
+    justify-content: flex-end;
+  }
+  footer #socialButtons a i {
+    font-size: 32px;
+  }
+  #homePage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+    font-size: medium;
+  }
+  #homePage #profilePhoto {
+    width: 80dvw;
+    height: auto;
+    margin: auto;
+    padding: 5%;
+    padding-bottom: 10%;
+  }
+  #homePage #profilePhoto img {
+    max-width: 100%;
+    box-shadow: 0 0 2px #67507E, 0 0 6px #67507E, 0 0 8px #67507E, 0 0 16px #B76E72, 0 0 24px #B76E72, 0 0 48px #B76E72;
+  }
+  #homePage #aboutMe {
+    height: auto;
+    width: 90dvw;
+    overflow: visible;
+    margin-top: 0;
+    padding-top: 1%;
+    margin-bottom: 2dvh;
+    padding-bottom: 1%;
+    background-color: #515D7E;
+  }
+  #homePage #aboutMe h1 {
+    font-size: x-large;
+  }
+  #homePage #aboutMe p {
+    font-size: large;
+  }
+  #homePage #progLang {
+    max-width: 70%;
+  }
+  #homePage #progLang .badgeRows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  #homePage #progLang .badgeRows * {
+    margin: 1%;
+    gap: 0;
+    height: auto;
+    width: 15%;
+  }
+  #homePage #tuxCat {
+    scale: 90%;
+  }
+  #projectsPage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+  }
+  #projectsPage .boxBorder, #projectsPage #projectCards {
+    height: auto;
+    width: 92dvw;
+    overflow: visible;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 2dvh;
+    padding-bottom: 1%;
+    background-color: #384363;
+  }
+  #projectsPage .boxBorder h1, #projectsPage #projectCards h1 {
+    font-size: xx-large;
+  }
+  #projectsPage .boxBorder .projectCard, #projectsPage #projectCards .projectCard {
+    width: 45%;
+    height: 35%;
+    padding: 1%;
+    padding-bottom: 4%;
+  }
+  #projectsPage .boxBorder .projectCard h3, #projectsPage #projectCards .projectCard h3 {
+    font-size: large;
+    margin-bottom: 5%;
+  }
+  #projectsPage #projectDetail {
+    width: 90dvw;
+    overflow: visible;
+    height: auto;
+    padding: 1%;
+    padding-bottom: 4%;
+  }
+  #projectsPage #projectDetail h1 {
+    font-size: xx-large;
+  }
+  #projectsPage #projectDetail .projectDetails {
+    margin: 0;
+    padding: 0;
+  }
+  #projectsPage #projectDetail .projectDetails .projectInfo {
+    margin: auto;
+    width: 90%;
+  }
+  #projectsPage #projectDetail .projectDetails .projectInfo h3 {
+    font-size: x-large;
+  }
+  #projectsPage #projectDetail .projectDetails .projectInfo p {
+    font-size: large;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  #workHistoryPage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+    font-size: medium;
+  }
+  #workHistoryPage h3 {
+    font-size: large;
+  }
+  #workHistoryPage #workHistory {
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 87.5dvw;
+    overflow: visible;
+    padding: 2dvw;
+    padding-bottom: 4dvw;
+    margin: auto;
+    margin-bottom: 2dvh;
+    background-color: #384363;
+  }
+  #workHistoryPage #workHistory h1 {
+    width: 100%;
+    text-align: left;
+    font-size: x-large;
+  }
+  #workHistoryPage #workHistory .workCard {
+    margin: auto;
+    width: 88%;
+    margin-top: 5%;
+    padding: 3%;
+  }
+  #workHistoryPage #workHistory .workCard h3 {
+    size: large;
+  }
+  #workHistoryPage #workHistory .workCard a {
+    height: auto;
+  }
+  #workHistoryPage #workHistory .workCard #ZVlogo {
+    margin-top: -5%;
+    margin-bottom: -10%;
+  }
+  #workHistoryPage #workHistory .workCard #placeH {
+    scale: 60%;
+    height: auto;
+    margin-top: -10%;
+    margin-bottom: -20%;
+  }
+  #workHistoryPage #documents {
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 87.5dvw;
+    padding: 2dvw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #workHistoryPage #documents .documentCard {
+    width: 88%;
+    padding: 3%;
+    margin: 2%;
+  }
+  #workHistoryPage #documents .documentCard .imageLink {
+    scale: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
   * {
     font-size: small;
   }
@@ -680,10 +897,13 @@ footer #socialButtons i {
     padding-top: 1%;
     margin-bottom: 2dvh;
     padding-bottom: 1%;
-    background-color: #384363;
+    background-color: #515D7E;
   }
-  #homePage #aboutMe * {
-    font-size: 14px;
+  #homePage #aboutMe h1 {
+    font-size: medium;
+  }
+  #homePage #aboutMe p {
+    font-size: small;
   }
   #homePage #progLang {
     max-width: 70%;
@@ -817,6 +1037,7 @@ footer #socialButtons i {
     width: 80dvw;
     padding: 5dvw;
     margin-bottom: 5%;
+    background-color: #515D7E;
   }
   #underConstructionPage {
     flex-direction: row wrap;

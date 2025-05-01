@@ -6,6 +6,7 @@
 $breakpointMobile: 600px;
 $breakpointMinTablet: 601px;
 $breakpointMaxTablet: 950px;
+$breakpointMinDesktop: 951px;
 
 //Colour themes
 $textdark: #0E192F;
@@ -730,7 +731,7 @@ footer {
     
 }
 
-@media (min-width:$breakpointMaxTablet) {
+@media only screen and (min-width:$breakpointMinDesktop) {
     
     header section nav button:hover {
         // background-color: $themepurplelight;
@@ -751,8 +752,277 @@ footer {
     }
 }
 
+@media only screen and (min-width:$breakpointMinTablet) and (max-width: $breakpointMaxTablet) {
+    * {
+        font-size: medium;
+    }
+    
+    footer {
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-top: 0;
+        padding: 0;
+        // padding-left: 1%;
+        padding-bottom: 2dvh;
+        height: 8dvh;
+        position: relative;
+        bottom: 0px;
 
-@media (max-width: $breakpointMobile) {
+        #footerNav {
+            flex-basis: 80%;
+            margin-left: 1%;
+            padding: 0;
+            width:45%;
+            // width: auto;
+        }
+
+        #mailto {
+            order: 1;
+            width:50%;
+            text-align: right;
+            margin-top: 0.5dvh;
+
+            a {
+                display: none;
+            }
+            
+            p {
+                display: inline;
+            }
+        }
+
+        #socialButtons {
+            width: 50%;
+            margin-left: 0;
+            gap: 2dvw;
+            justify-content: flex-end;
+                
+            a i {
+                    font-size: 32px;
+            }
+        }
+    }
+
+    #homePage {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: scroll; 
+        padding:2dvh;
+        font-size: medium;
+
+
+        #profilePhoto {
+            width: 80dvw;
+            height:auto;
+            margin: auto;
+            padding: 5%;
+            padding-bottom: 10%;;
+
+            img {
+                max-width: 100%;
+                @include ani.neonEffectMobile ($themepurplelight,$themeredlight)
+            }
+        }
+
+        #aboutMe {         
+            height: auto;
+            width: 90dvw;
+            overflow: visible;
+            margin-top: 0;
+            padding-top: 1%;
+            margin-bottom: 2dvh;
+            padding-bottom: 1%;
+            background-color: $themebluelight; 
+            
+            h1 {
+                font-size: x-large;
+            }
+
+            p {
+                font-size: large;
+            }
+        }
+
+        #progLang {
+            max-width: 70%;
+
+            .badgeRows {
+                display: flex;
+                justify-content: center;
+                flex-wrap: nowrap;
+
+                * {
+                    margin: 1%;
+                    gap: 0;
+                    height: auto;
+                    width: 15%;
+                }
+            }
+        }
+
+        #tuxCat {
+            scale: 90%;
+        }
+    }
+
+    #projectsPage {
+        // margin: 2dvw;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: scroll; 
+        padding:2dvh;
+        
+        .boxBorder , #projectCards {         
+            height: auto;
+            width: 92dvw;
+            overflow: visible;
+            margin-top: 0;
+            padding-top: 0;
+            margin-bottom: 2dvh;
+            padding-bottom: 1%;
+            background-color: $themebluemidlight;
+
+            h1 {
+                font-size: xx-large;
+            }
+           
+            .projectCard {
+                width: 45%;
+                height: 35%;
+                padding: 1%;
+                padding-bottom: 4%;
+
+                h3 {
+                    font-size: large;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+
+        #projectDetail {
+            width: 90dvw;
+            overflow: visible;
+            height: auto;
+            padding: 1%;
+            padding-bottom: 4%;
+
+            h1 {
+                font-size: xx-large;
+            }
+
+            .projectDetails {
+                margin: 0;
+                padding: 0;
+
+                .projectInfo {
+                    margin: auto; 
+                    width: 90%;
+        
+                    h3 {
+                        font-size: x-large;
+                    }
+        
+                    p {
+                        font-size: large;
+                        padding-left: 3%;
+                        padding-right: 3%;
+                    }
+                }
+            }
+        }
+    }
+
+    #workHistoryPage {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: scroll; 
+        padding:2dvh;
+        font-size: medium;
+
+        h3 {
+            font-size: large;
+        }
+
+        #workHistory {         
+            flex-direction: column;
+            align-content: center;
+            height: auto;
+            width: 87.5dvw;
+            overflow: visible;
+            padding: 2dvw;
+            padding-bottom: 4dvw;
+            margin: auto;
+            margin-bottom: 2dvh;
+            background-color: $themebluemidlight;
+
+            h1 {
+                width: 100%;
+                text-align: left;
+                font-size: x-large;
+            }
+
+
+
+            .workCard {
+                margin:auto;
+                width: 88%;
+                margin-top: 5%;
+                padding: 3%;
+                
+                h3 {
+                    size: large;
+                }
+
+
+                a { 
+                    height:auto;
+                }
+
+                #ZVlogo {
+                    margin-top: -5%;
+                    margin-bottom: -10%;
+                }
+               
+                #placeH {
+                    scale: 60%;
+                    height:auto;
+                    margin-top: -10%;
+                    margin-bottom: -20%;
+                }
+            
+            }
+
+        }
+
+        #documents {
+            flex-direction: column;
+            align-content: center;
+            height: auto;
+            width: 87.5dvw;
+            padding: 2dvw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+            .documentCard {
+                width: 88%;
+                padding: 3%;
+                margin: 2%;
+
+                .imageLink {
+                    scale: 80%;
+                }
+
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: $breakpointMobile) {
     * {
         font-size: small;
     }  
@@ -842,6 +1112,10 @@ footer {
         overflow: scroll; 
         padding:2dvh;
 
+        // h1 {
+        //     font-size: ;
+        // }
+
 
         #profilePhoto {
             width: 80dvw;
@@ -865,10 +1139,14 @@ footer {
             padding-top: 1%;
             margin-bottom: 2dvh;
             padding-bottom: 1%;
-            background-color: $themebluemidlight; 
+            background-color: $themebluelight; 
             
-            * {
-                font-size: 14px;
+            h1 {
+                font-size: medium;
+            }
+
+            p {
+                font-size: small;
             }
             
         }
@@ -1049,6 +1327,7 @@ footer {
             width: 80dvw;
             padding: 5dvw;
             margin-bottom: 5%;
+            background-color: $themebluelight;
         }
     }
 
@@ -1080,6 +1359,6 @@ footer {
     .unscrollFooter {
         position: fixed;
         bottom: 0px;
-        }
+    }
 }
 
