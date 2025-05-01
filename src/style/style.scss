@@ -116,12 +116,6 @@ body {
     padding-top: 4dvh;
     display: flex;
     justify-content: space-around;
-    
-
-    // .boxBorder {
-    //     width:45dvw;
-    //     height: 71.5dvh;
-    // }
 
     #profilePhoto {
         // margin: auto;
@@ -129,7 +123,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 70dvh;
-        width: 45dvw;
+        width: 30dvw;
 
         img {
             height:auto;
@@ -143,18 +137,14 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        // flex-wrap: wrap;
+        justify-content: space-evenly;
         height: 71.5dvh;
-        width: 45dvw;
+        width: 40dvw;
         border-radius: 25px;
         background-color: $themebluemidlight;
         box-shadow: #4C3663 0px 0px 25px;
 
         * {
-            // height:
-            // text-align: center;
-            // // font-size: x-large;
-            // flex-basis: 100%;
             padding: 1%;
         }
 
@@ -162,12 +152,24 @@ body {
             text-shadow: 0 0 0.25dvw $textlight;
         }
 
-        p {
-            text-align: center;
-            width: 90%;
-            margin: auto;
-            // padding-bottom: 2%;
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 85%;
+            width: 85%;
+            border-radius: 25px;
+            background-color: $themebluelight;
+            box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
+            margin-bottom: 2%;
+
+            h3, p {
+                text-align: center;
+                width: 90%;
+                margin: auto;
+                // padding-bottom: 2%;
+            }
         }
+        
 
         #progLang {
             display: flex;
@@ -188,6 +190,64 @@ body {
             //     // scale: 170%;
             // }
         }
+
+    }
+
+    #hobbiesInterests {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 71.5dvh;
+        width: 20dvw;
+        border-radius: 25px;
+        background-color: $themebluemidlight;
+        box-shadow: #4C3663 0px 0px 25px;
+        // margin: auto;
+
+        h1 {
+            height: auto;
+            padding: 5%;
+        }
+
+        .Hobbie {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background-color: $themebluelight;
+            box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
+            margin: auto;
+            height: 25%;
+            width: 90%; 
+
+            img {
+                padding: 3%;
+                aspect-ratio: 1 / 1;
+                width: 30%;
+                border-radius: 50%;
+                align-self: center;
+            }
+
+            p {
+                width: 60%;
+                padding: 2%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 0 0 0.25dvw $textlight;
+        }
+
+        // p {
+        //     text-align: center;
+        //     width: 90%;
+        //     margin: auto;
+        //     // padding-bottom: 2%;
+        // }
+
 
     }
     
@@ -535,7 +595,7 @@ body {
         border-radius: 25px;
         height: auto;
         width: 30%;
-        background-color: $themebluemidlight;
+        background-color: $themebluelight;
         box-shadow: #4C3663 0px 0px 25px;
 
         label {
@@ -825,6 +885,8 @@ footer {
             }
         }
 
+
+        
         #aboutMe {         
             height: auto;
             width: 90dvw;
@@ -832,33 +894,72 @@ footer {
             margin-top: 0;
             padding-top: 1%;
             margin-bottom: 2dvh;
-            padding-bottom: 1%;
-            background-color: $themebluelight; 
+            padding-bottom: 5%;
+            
             
             h1 {
                 font-size: x-large;
             }
 
-            p {
-                font-size: large;
+            #wrapper{
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding-top: 2%;
+                width: 90%;
+                margin-top: 2%;
+                
+                #progLang {
+                    max-width: 70%;
+        
+                    .badgeRows {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: nowrap;
+        
+                        * {
+                            margin: 1%;
+                            gap: 0;
+                            height: auto;
+                            width: 15%;
+                        }
+                    }
+                }
+
+                h3, p {
+                    font-size: large;
+                }
             }
         }
 
-        #progLang {
-            max-width: 70%;
+        #hobbiesInterests {
+            justify-content: space-between;
+            height: 80dvh;
+            width: 90dvw;
+            overflow: visible;
+            padding-top: 1%;
+            margin-bottom: 2dvh;
+            padding-bottom: 5%;
 
-            .badgeRows {
-                display: flex;
-                justify-content: center;
-                flex-wrap: nowrap;
-
-                * {
-                    margin: 1%;
-                    gap: 0;
-                    height: auto;
-                    width: 15%;
-                }
+            h1 {
+                font-size: x-large;
+                height:auto;
+                padding: 1%;
             }
+
+            .Hobbie {
+                margin: auto;
+                flex-direction: row;
+                padding: 1%;
+                width: 85%;
+                height: 25%;
+
+                p {
+                    font-size: large;
+                }
+
+            }
+
         }
 
         #tuxCat {
@@ -1090,10 +1191,6 @@ footer {
         font-size: small;
     }  
 
-        // main {
-    //     // height:auto;
-    // }
-
     header {
         padding-top: 2%;
         font-size: x-small;
@@ -1175,11 +1272,6 @@ footer {
         overflow: scroll; 
         padding:2dvh;
 
-        // h1 {
-        //     font-size: ;
-        // }
-
-
         #profilePhoto {
             width: 80dvw;
             height:auto;
@@ -1199,38 +1291,76 @@ footer {
             width: 90dvw;
             overflow: visible;
             margin-top: 0;
-            padding-top: 1%;
+            padding-top: 3%;
             margin-bottom: 2dvh;
-            padding-bottom: 1%;
-            background-color: $themebluelight; 
+            padding-bottom: 8%;
             
             h1 {
                 font-size: medium;
             }
 
-            p {
-                font-size: small;
+            #wrapper{
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                width: 90%;
+                margin-top: 2%;
+                
+                
+    
+                p {
+                    font-size: small;
+                }
+
+
+                #progLang {
+                    width:70%;
+                    max-width: 70%;
+        
+                    .badgeRows {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: nowrap;
+                        width: auto;
+
+        
+                        * {
+                            margin: 1%;
+                            gap: 0;
+                            height: auto;
+                            width: 20%;
+                        }
+                    }
+                }
             }
             
         }
 
-        #progLang {
-            max-width: 70%;
 
-            .badgeRows {
-                display: flex;
-                justify-content: center;
-                flex-wrap: nowrap;
-                // width: 50%;
-                // scale: 50%;
+        
 
-                * {
-                    margin: 1%;
-                    gap: 0;
-                    height: auto;
-                    width: 20%;
-                }
+        #hobbiesInterests {
+            height: 71.5dvh;
+            width: 90dvw;
+            overflow: visible;
+            margin-top: 5%;
+            padding-top: 1%;
+            margin-bottom: 2dvh;
+            padding-bottom: 3%;
+
+
+            h1 {
+                font-size: large;
+                padding: 2%;
             }
+
+            .Hobbie {
+                flex-direction: row;
+                padding: 1%;
+
+            }
+
         }
 
         #tuxCat {
