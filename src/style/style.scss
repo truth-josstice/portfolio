@@ -1019,6 +1019,69 @@ footer {
         }
     }
 
+    #contactMePage {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: scroll; 
+        padding:2dvh;
+        
+        a, h1 {
+            font-size: large;
+        }
+        .contactPhoto {
+            width: 45dvw;
+            margin: auto;
+        }
+
+        #contactForm {
+
+            * {
+                font-size: large;
+            }
+
+            order: 1;
+            width: 80dvw;
+            padding: 5dvw;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background-color: $themebluelight;
+        }
+    }
+
+    #underConstructionPage {
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            line-height: auto;
+            font-size: 75px;
+            height: 40%;
+            width: auto;
+            align-self: center;
+            margin: auto;
+        }
+
+        h3 {
+            line-height: auto;
+            font-size: 50px;
+            height: auto;
+        }
+
+        #pickAxe {
+            scale:80%;
+            height: 20dvh;
+            width: auto;
+            margin: auto;
+        }
+    }
+
+    .unscrollFooter {
+        position: fixed;
+        bottom: 0px;
+    }
+
 }
 
 

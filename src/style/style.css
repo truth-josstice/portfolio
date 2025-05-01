@@ -812,6 +812,59 @@ footer #socialButtons i {
   #workHistoryPage #documents .documentCard .imageLink {
     scale: 80%;
   }
+  #contactMePage {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+  }
+  #contactMePage a, #contactMePage h1 {
+    font-size: large;
+  }
+  #contactMePage .contactPhoto {
+    width: 45dvw;
+    margin: auto;
+  }
+  #contactMePage #contactForm {
+    order: 1;
+    width: 80dvw;
+    padding: 5dvw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #515D7E;
+  }
+  #contactMePage #contactForm * {
+    font-size: large;
+  }
+  #underConstructionPage {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #underConstructionPage h1 {
+    line-height: auto;
+    font-size: 75px;
+    height: 40%;
+    width: auto;
+    align-self: center;
+    margin: auto;
+  }
+  #underConstructionPage h3 {
+    line-height: auto;
+    font-size: 50px;
+    height: auto;
+  }
+  #underConstructionPage #pickAxe {
+    scale: 80%;
+    height: 20dvh;
+    width: auto;
+    margin: auto;
+  }
+  .unscrollFooter {
+    position: fixed;
+    bottom: 0px;
+  }
 }
 @media only screen and (max-width: 600px) {
   * {
