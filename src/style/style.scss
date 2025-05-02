@@ -102,12 +102,15 @@ header {
     
 }
 
-
 body {
     background-color: $themebluemiddark;
     padding-bottom: 0;
     height: 100%;
+
+    button, i, #submit {
+        cursor: pointer;
     }
+}
 
 #homePage {
     height:100%;
@@ -166,7 +169,7 @@ body {
 
             h3, p {
                 text-align: center;
-                width: 90%;
+                width: 95%;
                 margin: auto;
                 // padding-bottom: 2%;
             }
@@ -344,12 +347,13 @@ body {
             }
 
             img {
-                // background-color: $themebluemiddark;
                 margin-left: 10px;
                 height: 55%;
                 width: 35%;
                 border-radius: 50%;
-                animation: neonGlow 10s ease-out;
+                animation: neonGlow 10s ease-in-out;
+                // transition-delay: 10s;
+                transition: 10s;
                 // literally none of the below worked because I was struggling to remember how to add in partials!
                 // @include neon(rebeccapurple,royalblue,green,yellow,orange,red);
                 // @include nt;
@@ -476,6 +480,10 @@ body {
                 align-self: center;
             }
 
+            img {
+                animation: workAni 1s ease-out;
+            }
+
             #ZVlogo {
                 margin-top: 10%;
                 align-self: center;
@@ -563,6 +571,7 @@ body {
                     height: auto;
                     border-radius: 50%;
                     margin-left: 10%;
+                    animation: neonGlow 10s ease-in-out;
                 }
                 
 
@@ -752,8 +761,6 @@ footer {
         justify-content: space-around;
         width: 20%;
 
-        
-
         * {
         color: $textlight;
         list-style: none;
@@ -762,7 +769,7 @@ footer {
         
         i {
             font-size: 7.5dvh;
-
+            transition: .5s;
 
 
         }

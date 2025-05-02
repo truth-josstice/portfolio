@@ -54,6 +54,26 @@
     translate: -250px;
   }
 }
+@keyframes workAni {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(-2.5px);
+  }
+}
 * {
   border: 0;
   margin: 0;
@@ -118,6 +138,9 @@ body {
   padding-bottom: 0;
   height: 100%;
 }
+body button, body i, body #submit {
+  cursor: pointer;
+}
 
 #homePage {
   height: 100%;
@@ -171,7 +194,7 @@ body {
 }
 #homePage #aboutMe #wrapper h3, #homePage #aboutMe #wrapper p {
   text-align: center;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 #homePage #aboutMe #progLang {
@@ -314,7 +337,8 @@ body {
   height: 55%;
   width: 35%;
   border-radius: 50%;
-  animation: neonGlow 10s ease-out;
+  animation: neonGlow 10s ease-in-out;
+  transition: 10s;
 }
 #projectsPage #projectCards .projectCard div {
   width: 60%;
@@ -418,6 +442,9 @@ body {
   height: 15%;
   align-self: center;
 }
+#workHistoryPage #workHistory .workCard img {
+  animation: workAni 1s ease-out;
+}
 #workHistoryPage #workHistory .workCard #ZVlogo {
   margin-top: 10%;
   align-self: center;
@@ -491,6 +518,7 @@ body {
   height: auto;
   border-radius: 50%;
   margin-left: 10%;
+  animation: neonGlow 10s ease-in-out;
 }
 #workHistoryPage #documents .documentCard div {
   width: 60%;
@@ -635,6 +663,7 @@ footer #socialButtons * {
 }
 footer #socialButtons i {
   font-size: 7.5dvh;
+  transition: 0.5s;
 }
 
 @media only screen and (min-width: 951px) {
