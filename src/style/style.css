@@ -348,6 +348,9 @@ body button, body i, body #submit {
 #projectsPage #projectCards #portfolioCard {
   order: -1;
 }
+#projectsPage #projectCards #programCard {
+  order: -2;
+}
 #projectsPage #projectDetail {
   text-align: center;
   display: flex;
