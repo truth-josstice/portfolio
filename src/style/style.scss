@@ -1,6 +1,6 @@
 @use "./animations" as ani;
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Tilt+Neon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Tilt+Neon&display=swap");
 
 //Breakpoint variable
 $breakpointMobile: 600px;
@@ -9,1573 +9,1510 @@ $breakpointMaxTablet: 950px;
 $breakpointMinDesktop: 951px;
 
 //Colour themes
-$textdark: #0E192F;
-$textlight: #829CBC;
+$textdark: #0e192f;
+$textlight: #829cbc;
 $themebluedark: #070f26;
-$themebluemiddark: #141F3C;
-$themeblue: #222E4f;
+$themebluemiddark: #141f3c;
+$themeblue: #222e4f;
 $themebluemidlight: #384363;
-$themebluelight: #515D7E;
+$themebluelight: #515d7e;
 $themereddark: #380407;
 $themeredmiddark: #581519;
-$themered: #732A2D;
-$themeredmidlight: #91494D;
-$themeredlight: #B76E72;
+$themered: #732a2d;
+$themeredmidlight: #91494d;
+$themeredlight: #b76e72;
 $themepurpledark: #160627;
-$themepurplemiddark: #27123D;
-$themepurple: #37204F;
-$themepurplemidlight: #4C3663;
-$themepurplelight: #67507E;
+$themepurplemiddark: #27123d;
+$themepurple: #37204f;
+$themepurplemidlight: #4c3663;
+$themepurplelight: #67507e;
 
 * {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-family: "Tilt Neon", sans-serif; //test
-    color: $textdark;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Tilt Neon", sans-serif; //test
+  color: $textdark;
 }
 
 header {
-    width: 100dvw;
-    height: 10dvh;
-    background-color: $themebluedark;
-    justify-content: space-between;
-    align-items: center;
-    color: $textlight;
-    font-family: 'Iceland', sans-serif;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  width: 100dvw;
+  height: 10dvh;
+  background-color: $themebluedark;
+  justify-content: space-between;
+  align-items: center;
+  color: $textlight;
+  font-family: "Iceland", sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
-    img {
-        aspect-ratio: 1/1;
-        height: 8dvh;
-        width: auto;
-        margin-left: 2dvw;
+  img {
+    aspect-ratio: 1/1;
+    height: 8dvh;
+    width: auto;
+    margin-left: 2dvw;
+  }
+
+  section {
+    color: inherit;
+    font-family: inherit;
+    justify-self: flex-end;
+    margin-right: 2dvw;
+    margin-bottom: 0.5dvw;
+    // width: 30%;
+    // height: 7dvh;
+
+    h1 {
+      color: inherit;
+      font-family: inherit;
+      font-size: 4dvh;
+      text-align: center;
     }
 
-    section {
-        color: inherit;
-        font-family: inherit;
-        justify-self: flex-end;
-        margin-right: 2dvw;
-        margin-bottom: 0.5dvw;
-        // width: 30%;
-        // height: 7dvh;
-        
-        h1 {
-            color: inherit;
-            font-family: inherit;
-            font-size: 4dvh;
-            text-align: center;
-        }
-
-        h2 {
-            color: inherit;
-            font-family: inherit;
-            text-align: center;
-            font-size: x-large;
-        }
-    
-        nav {
-            // font-family: inherit;
-            margin-top: 0.5dvh;
-            text-align: center;
-
-            button {
-                background-color: $themebluedark;
-                text-align: center;
-                font-size: large;
-                color: $textlight;
-                transition: text-shadow, scale, 1s;
-                // padding: 0.25%;
-                // border-radius: 25%;
-                // width:40%;
-            }
-    
-
-        }
+    h2 {
+      color: inherit;
+      font-family: inherit;
+      text-align: center;
+      font-size: x-large;
     }
-    
-    
+
+    nav {
+      // font-family: inherit;
+      margin-top: 0.5dvh;
+      text-align: center;
+
+      button {
+        background-color: $themebluedark;
+        text-align: center;
+        font-size: large;
+        color: $textlight;
+        transition: text-shadow, scale, 1s;
+        // padding: 0.25%;
+        // border-radius: 25%;
+        // width:40%;
+      }
+    }
+  }
 }
 
 body {
-    background-color: $themebluemiddark;
-    padding-bottom: 0;
-    height: 100%;
+  background-color: $themebluemiddark;
+  padding-bottom: 0;
+  height: 100%;
 
-    button, i, #submit {
-        cursor: pointer;
-    }
+  button,
+  i,
+  #submit {
+    cursor: pointer;
+  }
 }
 
 #homePage {
-    height:100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 2dvw;
-    padding-top: 4dvh;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 2dvw;
+  padding-top: 4dvh;
+  display: flex;
+  justify-content: space-around;
+
+  #profilePhoto {
+    // margin: auto;
     display: flex;
-    justify-content: space-around;
-
-    #profilePhoto {
-        // margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70dvh;
-        width: 30dvw;
-
-        img {
-            height:auto;
-            width: auto;
-            border-radius: 50%;
-            @include ani.neonEffect($themepurplelight,$themeredlight);
-        }
-    }
-
-    #aboutMe {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 71.5dvh;
-        width: 40dvw;
-        border-radius: 25px;
-        background-color: $themebluemidlight;
-        box-shadow: #4C3663 0px 0px 25px;
-
-        * {
-            padding: 1%;
-        }
-
-        h1 {
-            text-shadow: 0 0 0.25dvw $textlight;
-        }
-
-        #wrapper {
-            display: flex;
-            flex-direction: column;
-            height: 85%;
-            width: 90%;
-            border-radius: 25px;
-            background-color: $themebluelight;
-            box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
-            margin-bottom: 2%;
-            padding-bottom: 2%;
-
-            h3, p {
-                text-align: center;
-                width: 95%;
-                margin: auto;
-                // padding-bottom: 2%;
-            }
-        }
-        
-
-        #progLang {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
-            
-            .badgeRows {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                width: 100%;
-                scale: 150%;
-            }
-           
-            // img {
-            //     height: 35%;
-            //     // scale: 170%;
-            // }
-        }
-
-    }
-
-    #hobbiesInterests {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 71.5dvh;
-        width: 20dvw;
-        border-radius: 25px;
-        background-color: $themebluemidlight;
-        box-shadow: #4C3663 0px 0px 25px;
-        // margin: auto;
-
-        h1 {
-            height: auto;
-            padding: 5%;
-        }
-
-        .Hobbie {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            border-radius: 25px;
-            background-color: $themebluelight;
-            box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
-            margin: auto;
-            height: 25%;
-            width: 90%; 
-
-            img {
-                padding: 3%;
-                aspect-ratio: 1 / 1;
-                width: 30%;
-                border-radius: 50%;
-                align-self: center;
-            }
-
-            p {
-                width: 60%;
-                padding: 2%;
-            }
-        }
-
-        h1 {
-            text-align: center;
-            text-shadow: 0 0 0.25dvw $textlight;
-        }
-
-        // p {
-        //     text-align: center;
-        //     width: 90%;
-        //     margin: auto;
-        //     // padding-bottom: 2%;
-        // }
-
-
-    }
-    
-    #tuxCat {
-        rotate: 90deg;
-        position:fixed; 
-        top: 10%;
-        left: -250px;
-        animation: tuxedoCat 10s linear;
-    }
-
-}
-
-#projectsPage {
-    height:100%;
-    margin: 0;
-    padding: 2dvw;
-    padding-top: 4dvh;
-    display: flex;
-    justify-content: space-around;
-    
-    .boxBorder {
-        width:45dvw;
-        height: 71.5dvh;
-        border-radius: 25px;
-        overflow:hidden;
-        box-shadow: #4C3663 0px 0px 25px;
-    }
-
-    #projectCards{ 
-        text-align: center;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        row-gap: 2dvh;
-        overflow: visible;
-        overflow-x: hidden;
-        scrollbar-width: thin;
-        scrollbar-color: $themeredmiddark $themebluemidlight;
-        background-color: $themebluemidlight;
-        width:45dvw;
-        height: 70dvh;
-        border-radius: 25px;
-        padding-bottom:15dvh;
-        // box-shadow: inset $themeredmiddark 0px 0px 12.5px;
-        
-        h1 {
-            order:-2;
-            margin-top: 1dvh;
-            font-size: x-large;
-            flex-basis: 100%;
-            text-shadow: 0 0 0.25dvw $textlight;
-        }
-
-        .projectCard{
-            display: flex;
-            flex-flow: row wrap;
-            row-gap: 2%;
-            text-align: center;
-            justify-content: space-evenly;
-            // align-items: center;
-            border-radius: 25px;
-            width:40%;
-            height:30%;
-            background-color: $themebluelight;
-            box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
-            transition: transform 3s ease;
-            
-            .detailLink {
-                flex-basis: 100%;
-                text-decoration: none;
-                height: 10%;
-            }
-
-            .imageLink {
-                height: auto;
-                width: 35%;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-
-            h3 {
-                height: 10%;
-                flex-basis: 100%;
-                padding-top: 2%;
-                padding-left: 2%;
-                text-shadow: 0 0 0.25dvw $textlight;
-            }
-
-            img {
-                margin-left: 10px;
-                height: 55%;
-                width: 35%;
-                border-radius: 50%;
-                animation: neonGlow 10s ease-in-out;
-                // transition-delay: 10s;
-                transition: 10s;
-                // literally none of the below worked because I was struggling to remember how to add in partials!
-                // @include neon(rebeccapurple,royalblue,green,yellow,orange,red);
-                // @include nt;
-                // @include neon(royalblue, green, yellow, orange, red, rebeccapurple); not working for some reason, no errors but not compiling to css
-            }
-           
-            div {
-                width: 60%;
-                margin-left: 2%;
-                height: 55%;
-                // align-self: center;
-                // align-content: center;
-            }
-        }
-
-        #portfolioCard {
-            order: -1;
-        }
-
-        #programCard {
-            order: -2   
-        }
-
-        #SQLCard {
-            order: -3
-        }
-
-        #documentationCard {
-            order: -4
-        }
-
-        #flaskCard {
-            order: -5
-        }
-
-    }
-
-    #projectDetail{
-        text-align: center;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        row-gap: 2dvh;
-        overflow: scroll;
-        overflow-x: hidden;
-        scrollbar-width: thin;
-        scrollbar-color: $themeredmiddark $themebluemidlight;
-        background-color: $themebluemidlight;
-        width:45dvw;
-        height: 70dvh;
-        border-radius: 25px;
-        padding-bottom: 1.5dvh;
-        // box-sizing: border-box;
-
-        h1 {
-            height: auto;
-            margin-top: 1dvh;
-            font-size: x-large;
-            text-shadow: 0 0 0.25dvw $textlight;
-        }
-
-        .projectDetails {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            width: 100%;
-            row-gap: 2dvh;
-            margin: 0;
-        }
-
-        .projectInfo {
-            padding: 1dvh;
-            width: 85%;
-            margin: auto;
-            box-shadow: inset 0 0 5px $themereddark, 0 0 5px $themeredmidlight;
-            border-radius: 25px;
-            background-color: $themebluelight;
-
-            h3 {
-                text-shadow: 0 0 0.25dvw $textlight;
-            }
-        }
-    }
-}
-
-#workHistoryPage {
-    height: 100%;
-    padding: 2dvw;
-    padding-top: 4dvh;
-    display: flex;
-    justify-content: space-around;
-    
-    #workHistory {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: auto;
-        width:65dvw;
-        height: 71.5dvh;
-        border-radius: 25px;
-        overflow:hidden;
-        background-color: $themebluemidlight;
-        box-shadow: #4C3663 0px 0px 25px;
-
-
-        h1 {
-            margin: auto;
-            padding-left: 2%;
-            // padding-top: 2%;
-            flex-basis: 100%;
-            height: auto;
-            text-shadow: 0 0 0.25dvw $textlight;
-        }
-
-        h3 {
-            margin-top: -1%;
-            padding-left: 2%;
-            flex-basis: 100%;
-            height: auto;
-            text-shadow: 0 0 0.25dvw $textlight;
-        }
-
-        .workCard {
-            display: flex;
-            flex-flow: column;
-            justify-content: flex-start;
-            height: 80%;
-            width: 30%;
-            background-color: $themebluelight;
-            border-radius: 25px;
-            box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
-
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 60%;
-                height: 15%;
-                align-self: center;
-            }
-
-            img {
-                animation: workAni 1s ease-out;
-            }
-
-            #ZVlogo {
-                margin-top: 10%;
-                align-self: center;
-                aspect-ratio: 16 / 9;
-                width: 100%;
-                height:auto;
-            }
-
-            #brooksfield {
-                align-self: center;
-                aspect-ratio: 1 / 0.3;
-                height:auto;
-                width: 90%;
-                margin-top: 10%;
-
-            }
-
-            #placeH {
-                margin-top: 10%;
-                aspect-ratio: 1 / 1;
-                height: 100%;
-            }
-
-            .jobDescript {
-                font-size: 14px;
-                margin-top: 5%;
-                padding: 2%;
-
-                p {
-                    margin-top: 0.5%;
-                    padding-left: 2%;
-                }
-
-                ul {
-                    font-weight: bold;
-                    padding-left: 8%;
-                }
-            }
-        }
-    }
-
-    #documents {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
-        width:25dvw;
-        height: 71.5dvh;
-        border-radius: 25px;
-        overflow:hidden;
-        background-color: $themebluemidlight;
-        box-shadow: #4C3663 0px 0px 25px;
-        text-shadow: 0 0 0.25dvw $textlight;
-
-        h1 {
-            // margin: auto;
-            padding-top: 2%;
-            text-align: center;
-            padding-left: 2%;
-            flex-basis: 100%;
-            height: 5%;
-        }
-
-        .documentCard{
-            display: flex;
-            flex-flow: row wrap;
-            row-gap: 2%;
-            text-align: center;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 80%;
-            height: 35%;
-            border-radius: 25px;
-            background-color: $themebluelight;
-            box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
-
-
-            .imageLink {
-                // height: auto;
-                width: 35%;
-
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 50%;
-                    margin-left: 10%;
-                    animation: neonGlow 10s ease-in-out;
-                }
-                
-
-            }  
-
-            div {
-                width: 60%;
-                margin-left: 2%;
-                height: 40%;
-                
-                p {
-                    margin-top: 2%;
-                }
-            }
-        }
-    }
-
-}
-
-#contactMePage {
-    height: 100%;
-    padding: 2dvw;
-    padding-top: 4dvh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    #contactForm {
-        display: flex;
-        flex-flow: row wrap;
-        padding: 2%;
-        border-radius: 25px;
-        height: auto;
-        width: 30%;
-        background-color: $themebluelight;
-        box-shadow: #4C3663 0px 0px 25px;
-
-        label {
-            flex-basis: 100%;
-            height: 10%;
-        }
-
-        input {
-            width: 90%;
-            padding: 2%;
-            margin-top: 2%;
-            margin-bottom: 1%;
-            
-        }
-
-        textarea {
-            resize: none;
-            width: 90%;
-            padding: 2%;
-            margin-top: 2%;
-            margin-bottom: 1%;
-        }
-
-        #submit {
-            width: 30%;
-        }
-
-    }
-
-    .contactPhoto {
-        margin-top: 4%;
-        width: 25%;
-        height: 50%;
-        text-align: center;
-
-        * {
-            color: $textlight;
-            text-shadow: 0 0 5px $themered, 0 0 2px $themeredlight;
-        }
-
-        img {
-            filter: grayscale(1);
-            border-radius: 50%;
-            max-width: 100%;
-        }
-
-        h1 {
-            padding-top: 2%;
-        }
-    }
-
-}
-
-#underConstructionPage {
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    // align-items: center;
     justify-content: center;
-    text-align: center;
-    font-size: 48px;
+    align-items: center;
+    height: 70dvh;
+    width: 30dvw;
+
+    img {
+      height: auto;
+      width: auto;
+      border-radius: 50%;
+      @include ani.neonEffect($themepurplelight, $themeredlight);
+    }
+  }
+
+  #aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 71.5dvh;
+    width: 40dvw;
+    border-radius: 25px;
+    background-color: $themebluemidlight;
+    box-shadow: #4c3663 0px 0px 25px;
 
     * {
-        @include ani.neonTextEffect ($themepurplemidlight, $themepurple);
-        color: $themepurplelight;
-        font-family: 'Iceland', sans-serif;
-        height: 50%;
-        padding: 5%;
+      padding: 1%;
     }
 
     h1 {
-        margin-top: 2%;
-        line-height: auto;
+      text-shadow: 0 0 0.25dvw $textlight;
     }
 
-    #pickAxe{
-        order: -1;
-        width: auto;
+    #wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 85%;
+      width: 90%;
+      border-radius: 25px;
+      background-color: $themebluelight;
+      box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
+      margin-bottom: 2%;
+      padding-bottom: 2%;
+
+      h3,
+      p {
+        text-align: center;
+        width: 95%;
+        margin: auto;
+        // padding-bottom: 2%;
+      }
+    }
+
+    #progLang {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+
+      .badgeRows {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        scale: 150%;
+      }
+
+      // img {
+      //     height: 35%;
+      //     // scale: 170%;
+      // }
+    }
+  }
+
+  #hobbiesInterests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 71.5dvh;
+    width: 20dvw;
+    border-radius: 25px;
+    background-color: $themebluemidlight;
+    box-shadow: #4c3663 0px 0px 25px;
+    // margin: auto;
+
+    h1 {
+      height: auto;
+      padding: 5%;
+    }
+
+    .Hobbie {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      background-color: $themebluelight;
+      box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
+      margin: auto;
+      height: 25%;
+      width: 90%;
+
+      img {
+        padding: 3%;
+        aspect-ratio: 1 / 1;
+        width: 30%;
+        border-radius: 50%;
+        align-self: center;
+      }
+
+      p {
+        width: 60%;
+        padding: 2%;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      text-shadow: 0 0 0.25dvw $textlight;
+    }
+
+    // p {
+    //     text-align: center;
+    //     width: 90%;
+    //     margin: auto;
+    //     // padding-bottom: 2%;
+    // }
+  }
+
+  #tuxCat {
+    rotate: 90deg;
+    position: fixed;
+    top: 10%;
+    left: -250px;
+    animation: tuxedoCat 10s linear;
+  }
+}
+
+#projectsPage {
+  height: 100%;
+  margin: 0;
+  padding: 2dvw;
+  padding-top: 4dvh;
+  display: flex;
+  justify-content: space-around;
+
+  .boxBorder {
+    width: 45dvw;
+    height: 71.5dvh;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: #4c3663 0px 0px 25px;
+  }
+
+  #projectCards {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 2dvh;
+    overflow: visible;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: $themeredmiddark $themebluemidlight;
+    background-color: $themebluemidlight;
+    width: 45dvw;
+    height: 70dvh;
+    border-radius: 25px;
+    padding-bottom: 15dvh;
+    // box-shadow: inset $themeredmiddark 0px 0px 12.5px;
+
+    h1 {
+      order: -2;
+      margin-top: 1dvh;
+      font-size: x-large;
+      flex-basis: 100%;
+      text-shadow: 0 0 0.25dvw $textlight;
+    }
+
+    .projectCard {
+      display: flex;
+      flex-flow: row wrap;
+      row-gap: 2%;
+      text-align: center;
+      justify-content: space-evenly;
+      // align-items: center;
+      border-radius: 25px;
+      width: 40%;
+      height: 30%;
+      background-color: $themebluelight;
+      box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
+      transition: transform 3s ease;
+
+      .detailLink {
+        flex-basis: 100%;
+        text-decoration: none;
+        height: 10%;
+      }
+
+      .imageLink {
         height: auto;
-        filter: grayscale(.6);
-        animation: pickAxe 1s infinite linear;
+        width: 35%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      h3 {
+        height: 10%;
+        flex-basis: 100%;
+        padding-top: 2%;
+        padding-left: 2%;
+        text-shadow: 0 0 0.25dvw $textlight;
+      }
+
+      img {
+        margin-left: 10px;
+        height: 55%;
+        width: 35%;
+        border-radius: 50%;
+        animation: neonGlow 10s ease-in-out;
+        // transition-delay: 10s;
+        transition: 10s;
+        // literally none of the below worked because I was struggling to remember how to add in partials!
+        // @include neon(rebeccapurple,royalblue,green,yellow,orange,red);
+        // @include nt;
+        // @include neon(royalblue, green, yellow, orange, red, rebeccapurple); not working for some reason, no errors but not compiling to css
+      }
+
+      div {
+        width: 60%;
+        margin-left: 2%;
+        height: 55%;
+        // align-self: center;
+        // align-content: center;
+      }
     }
 
-    
+    h1 {
+      order: -10;
+    }
+
+    #portfolioCard {
+      order: 0;
+    }
+
+    #programCard {
+      order: -1;
+    }
+
+    #SQLCard {
+      order: -2;
+    }
+
+    #documentationCard {
+      order: -3;
+    }
+
+    #flaskCard {
+      order: -5;
+    }
+  }
+
+  #projectDetail {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 2dvh;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: $themeredmiddark $themebluemidlight;
+    background-color: $themebluemidlight;
+    width: 45dvw;
+    height: 70dvh;
+    border-radius: 25px;
+    padding-bottom: 1.5dvh;
+    // box-sizing: border-box;
+
+    h1 {
+      height: auto;
+      margin-top: 1dvh;
+      font-size: x-large;
+      text-shadow: 0 0 0.25dvw $textlight;
+    }
+
+    .projectDetails {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      width: 100%;
+      row-gap: 2dvh;
+      margin: 0;
+    }
+
+    .projectInfo {
+      padding: 1dvh;
+      width: 85%;
+      margin: auto;
+      box-shadow: inset 0 0 5px $themereddark, 0 0 5px $themeredmidlight;
+      border-radius: 25px;
+      background-color: $themebluelight;
+
+      h3 {
+        text-shadow: 0 0 0.25dvw $textlight;
+      }
+    }
+  }
+}
+
+#workHistoryPage {
+  height: 100%;
+  padding: 2dvw;
+  padding-top: 4dvh;
+  display: flex;
+  justify-content: space-around;
+
+  #workHistory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 65dvw;
+    height: 71.5dvh;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: $themebluemidlight;
+    box-shadow: #4c3663 0px 0px 25px;
+
+    h1 {
+      margin: auto;
+      padding-left: 2%;
+      // padding-top: 2%;
+      flex-basis: 100%;
+      height: auto;
+      text-shadow: 0 0 0.25dvw $textlight;
+    }
+
+    h3 {
+      margin-top: -1%;
+      padding-left: 2%;
+      flex-basis: 100%;
+      height: auto;
+      text-shadow: 0 0 0.25dvw $textlight;
+    }
+
+    .workCard {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      height: 80%;
+      width: 30%;
+      background-color: $themebluelight;
+      border-radius: 25px;
+      box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 15%;
+        align-self: center;
+      }
+
+      img {
+        animation: workAni 1s ease-out;
+      }
+
+      #ZVlogo {
+        margin-top: 10%;
+        align-self: center;
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+      }
+
+      #brooksfield {
+        align-self: center;
+        aspect-ratio: 1 / 0.3;
+        height: auto;
+        width: 90%;
+        margin-top: 10%;
+      }
+
+      #placeH {
+        margin-top: 10%;
+        aspect-ratio: 1 / 1;
+        height: 100%;
+      }
+
+      .jobDescript {
+        font-size: 14px;
+        margin-top: 5%;
+        padding: 2%;
+
+        p {
+          margin-top: 0.5%;
+          padding-left: 2%;
+        }
+
+        ul {
+          font-weight: bold;
+          padding-left: 8%;
+        }
+      }
+    }
+  }
+
+  #documents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 25dvw;
+    height: 71.5dvh;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: $themebluemidlight;
+    box-shadow: #4c3663 0px 0px 25px;
+    text-shadow: 0 0 0.25dvw $textlight;
+
+    h1 {
+      // margin: auto;
+      padding-top: 2%;
+      text-align: center;
+      padding-left: 2%;
+      flex-basis: 100%;
+      height: 5%;
+    }
+
+    .documentCard {
+      display: flex;
+      flex-flow: row wrap;
+      row-gap: 2%;
+      text-align: center;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80%;
+      height: 35%;
+      border-radius: 25px;
+      background-color: $themebluelight;
+      box-shadow: 0 0 5px $themeredmidlight, inset 0 0 5px $themereddark;
+
+      .imageLink {
+        // height: auto;
+        width: 35%;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+          margin-left: 10%;
+          animation: neonGlow 10s ease-in-out;
+        }
+      }
+
+      div {
+        width: 60%;
+        margin-left: 2%;
+        height: 40%;
+
+        p {
+          margin-top: 2%;
+        }
+      }
+    }
+  }
+}
+
+#contactMePage {
+  height: 100%;
+  padding: 2dvw;
+  padding-top: 4dvh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  #contactForm {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2%;
+    border-radius: 25px;
+    height: auto;
+    width: 30%;
+    background-color: $themebluelight;
+    box-shadow: #4c3663 0px 0px 25px;
+
+    label {
+      flex-basis: 100%;
+      height: 10%;
+    }
+
+    input {
+      width: 90%;
+      padding: 2%;
+      margin-top: 2%;
+      margin-bottom: 1%;
+    }
+
+    textarea {
+      resize: none;
+      width: 90%;
+      padding: 2%;
+      margin-top: 2%;
+      margin-bottom: 1%;
+    }
+
+    #submit {
+      width: 30%;
+    }
+  }
+
+  .contactPhoto {
+    margin-top: 4%;
+    width: 25%;
+    height: 50%;
+    text-align: center;
+
+    * {
+      color: $textlight;
+      text-shadow: 0 0 5px $themered, 0 0 2px $themeredlight;
+    }
+
+    img {
+      filter: grayscale(1);
+      border-radius: 50%;
+      max-width: 100%;
+    }
+
+    h1 {
+      padding-top: 2%;
+    }
+  }
+}
+
+#underConstructionPage {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  // align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+
+  * {
+    @include ani.neonTextEffect($themepurplemidlight, $themepurple);
+    color: $themepurplelight;
+    font-family: "Iceland", sans-serif;
+    height: 50%;
+    padding: 5%;
+  }
+
+  h1 {
+    margin-top: 2%;
+    line-height: auto;
+  }
+
+  #pickAxe {
+    order: -1;
+    width: auto;
+    height: auto;
+    filter: grayscale(0.6);
+    animation: pickAxe 1s infinite linear;
+  }
 }
 
 footer {
+  color: $textlight;
+  display: flex;
+  flex-direction: row;
+  width: 100dvw;
+  height: 10dvh;
+  background-color: $themebluedark;
+  bottom: 0px;
+  position: absolute;
+  overflow: hidden;
+  // justify-content: flex-start;
+  // gap: 2dvw;
+  // align-items: center;
+
+  // @media (max-width: $breakpoint-mobile) {
+  //     margin-left: 0;
+  // }
+
+  #footerNav {
+    align-self: center;
+    margin-left: 0.5%;
     color: $textlight;
+
+    * {
+      color: $textlight;
+      text-decoration: none;
+      // margin-top: 0.2dvh;
+    }
+
+    a:hover {
+      color: $themepurplelight;
+    }
+  }
+
+  #mailto {
+    // align-self: center;
+    // text-align: center;
+    margin-left: 1%;
+    margin-top: 0.5%;
+
+    * {
+      color: $textlight;
+      // text-align: center;
+    }
+
+    p {
+      display: none;
+    }
+    a:hover {
+      color: $themepurplelight;
+    }
+  }
+
+  #socialButtons {
     display: flex;
-    flex-direction: row;
-    width: 100dvw;
-    height: 10dvh;
-    background-color: $themebluedark;
+    margin-left: auto;
+    margin-right: 2dvw;
+    align-self: center;
+    justify-content: space-around;
+    width: 20%;
+
+    * {
+      color: $textlight;
+      list-style: none;
+      // justify-self: end;
+    }
+
+    i {
+      font-size: 7.5dvh;
+      transition: 0.5s;
+    }
+  }
+
+  // footer:last-child {
+  //     margin-left:auto;
+  // }
+
+  // section ul li unnessecary declarations for these sections
+
+  // li {
+  //     list-style: none;
+  //     color: $textlight;
+
+  // }
+
+  // a {
+  //     color: $textlight;
+  //     text-decoration: none;
+  // }
+}
+
+@media only screen and (min-width: $breakpointMinDesktop) {
+  header section nav button:hover {
+    // background-color: $themepurplelight;
+    text-shadow: 0 0 5px $themepurplelight, 0 0 5px $themepurplelight,
+      0 0 5px $themepurplelight, 0 0 5px $themepurplelight,
+      0 0 5px $themepurplelight, 0 0 5px $themepurplelight,
+      0 0 5px $themepurplelight, 0 0 5px $themepurplelight;
+    scale: 110%;
+  }
+
+  .projectCard:hover {
+    transform: scale(1.1);
+  }
+
+  #socialButtons i:hover {
+    color: $themepurplelight;
+  }
+
+  .projectInfo p {
+    font-size: large;
+  }
+}
+
+@media only screen and (min-width: $breakpointMinTablet) and (max-width: $breakpointMaxTablet) {
+  * {
+    font-size: medium;
+  }
+
+  footer {
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+    // padding-left: 1%;
+    padding-bottom: 2dvh;
+    height: 8dvh;
+    position: relative;
     bottom: 0px;
-    position: absolute;
-    overflow: hidden;   
-    // justify-content: flex-start;
-    // gap: 2dvw;
-    // align-items: center;
-
-    // @media (max-width: $breakpoint-mobile) {
-    //     margin-left: 0;
-    // }
-
-
 
     #footerNav {
-        align-self: center;
-        margin-left: 0.5%;
-        color: $textlight;
-
-
-        * {
-        color: $textlight;
-        text-decoration: none;
-        // margin-top: 0.2dvh;
-        }
-        
-
-
-        a:hover {
-            color: $themepurplelight;
-        }
-
+      flex-basis: 80%;
+      margin-left: 1%;
+      padding: 0;
+      width: 45%;
+      // width: auto;
     }
 
     #mailto {
-        // align-self: center;
-        // text-align: center;
-        margin-left: 1%;
-        margin-top: 0.5%;
+      order: 1;
+      width: 50%;
+      text-align: right;
+      margin-top: 0.5dvh;
 
-        * {
-            color: $textlight;
-            // text-align: center;
-        }
+      a {
+        display: none;
+      }
 
-        p {
-            display: none;
-        }
-        a:hover{
-            color: $themepurplelight;
-        }
-
+      p {
+        display: inline;
+      }
     }
 
     #socialButtons {
-        display: flex;
-        margin-left: auto;
-        margin-right: 2dvw;
-        align-self: center;
-        justify-content: space-around;
-        width: 20%;
+      width: 50%;
+      margin-left: 0;
+      gap: 2dvw;
+      justify-content: flex-end;
 
-        * {
-        color: $textlight;
-        list-style: none;
-        // justify-self: end;
-        }
-        
-        i {
-            font-size: 7.5dvh;
-            transition: .5s;
+      a i {
+        font-size: 32px;
+      }
+    }
+  }
 
+  #homePage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+    font-size: medium;
 
-        }
+    #profilePhoto {
+      width: 80dvw;
+      height: auto;
+      margin: auto;
+      padding: 5%;
+      padding-bottom: 10%;
 
-
+      img {
+        max-width: 100%;
+        @include ani.neonEffectMobile($themepurplelight, $themeredlight);
+      }
     }
 
-    // footer:last-child {
-    //     margin-left:auto;
-    // }
+    #aboutMe {
+      height: auto;
+      width: 90dvw;
+      overflow: visible;
+      margin-top: 0;
+      padding-top: 1%;
+      margin-bottom: 2dvh;
+      padding-bottom: 5%;
 
+      h1 {
+        font-size: x-large;
+      }
 
-    // section ul li unnessecary declarations for these sections
-
-
-
-    // li {
-    //     list-style: none;
-    //     color: $textlight;
-
-    // }
-
-    // a {
-    //     color: $textlight;
-    //     text-decoration: none;
-    // }
-
-    
-}
-
-@media only screen and (min-width:$breakpointMinDesktop) {
-    
-    header section nav button:hover {
-        // background-color: $themepurplelight;
-        text-shadow: 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight, 0 0 5px $themepurplelight;
-        scale: 110%;
-    }
-
-    .projectCard:hover{
-        transform: scale(1.1);
-    }
-
-    #socialButtons i:hover {
-        color: $themepurplelight;
-    }
-
-    .projectInfo p {
-        font-size: large;
-    }
-}
-
-@media only screen and (min-width:$breakpointMinTablet) and (max-width: $breakpointMaxTablet) {
-    * {
-        font-size: medium;
-    }
-    
-    footer {
-        flex-flow: column wrap;
+      #wrapper {
         justify-content: center;
-        margin-top: 0;
-        padding: 0;
-        // padding-left: 1%;
-        padding-bottom: 2dvh;
-        height: 8dvh;
-        position: relative;
-        bottom: 0px;
-
-        #footerNav {
-            flex-basis: 80%;
-            margin-left: 1%;
-            padding: 0;
-            width:45%;
-            // width: auto;
-        }
-
-        #mailto {
-            order: 1;
-            width:50%;
-            text-align: right;
-            margin-top: 0.5dvh;
-
-            a {
-                display: none;
-            }
-            
-            p {
-                display: inline;
-            }
-        }
-
-        #socialButtons {
-            width: 50%;
-            margin-left: 0;
-            gap: 2dvw;
-            justify-content: flex-end;
-                
-            a i {
-                    font-size: 32px;
-            }
-        }
-    }
-
-    #homePage {
-        flex-flow: column wrap;
-        justify-content: flex-start;
         align-items: center;
-        overflow: scroll; 
-        padding:2dvh;
-        font-size: medium;
+        margin: 0;
+        padding-top: 2%;
+        width: 90%;
+        margin-top: 2%;
 
+        #progLang {
+          max-width: 70%;
 
-        #profilePhoto {
-            width: 80dvw;
-            height:auto;
-            margin: auto;
-            padding: 5%;
-            padding-bottom: 10%;;
-
-            img {
-                max-width: 100%;
-                @include ani.neonEffectMobile ($themepurplelight,$themeredlight)
-            }
-        }
-
-
-        
-        #aboutMe {         
-            height: auto;
-            width: 90dvw;
-            overflow: visible;
-            margin-top: 0;
-            padding-top: 1%;
-            margin-bottom: 2dvh;
-            padding-bottom: 5%;
-            
-            
-            h1 {
-                font-size: x-large;
-            }
-
-            #wrapper{
-                justify-content: center;
-                align-items: center;
-                margin: 0;
-                padding-top: 2%;
-                width: 90%;
-                margin-top: 2%;
-                
-                #progLang {
-                    max-width: 70%;
-        
-                    .badgeRows {
-                        display: flex;
-                        justify-content: center;
-                        flex-wrap: nowrap;
-        
-                        * {
-                            margin: 1%;
-                            gap: 0;
-                            height: auto;
-                            width: 15%;
-                        }
-                    }
-                }
-
-                h3, p {
-                    font-size: large;
-                }
-            }
-        }
-
-        #hobbiesInterests {
-            justify-content: space-between;
-            height: 80dvh;
-            width: 90dvw;
-            overflow: visible;
-            padding-top: 1%;
-            margin-bottom: 2dvh;
-            padding-bottom: 5%;
-
-            h1 {
-                font-size: x-large;
-                height:auto;
-                padding: 1%;
-            }
-
-            .Hobbie {
-                margin: auto;
-                flex-direction: row;
-                padding: 1%;
-                width: 85%;
-                height: 25%;
-
-                p {
-                    font-size: large;
-                }
-
-            }
-
-        }
-
-        #tuxCat {
-            scale: 90%;
-        }
-    }
-
-    #projectsPage {
-        // margin: 2dvw;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; 
-        padding:2dvh;
-        
-        .boxBorder , #projectCards {         
-            height: auto;
-            width: 92dvw;
-            overflow: visible;
-            margin-top: 0;
-            padding-top: 0;
-            margin-bottom: 2dvh;
-            padding-bottom: 1%;
-            background-color: $themebluemidlight;
-
-            h1 {
-                font-size: xx-large;
-            }
-           
-            .projectCard {
-                width: 45%;
-                height: 35%;
-                padding: 1%;
-                padding-bottom: 4%;
-
-                h3 {
-                    font-size: large;
-                    margin-bottom: 5%;
-                }
-            }
-        }
-
-        #projectDetail {
-            width: 90dvw;
-            overflow: visible;
-            height: auto;
-            padding: 1%;
-            padding-bottom: 4%;
-
-            h1 {
-                font-size: xx-large;
-            }
-
-            .projectDetails {
-                margin: 0;
-                padding: 0;
-
-                .projectInfo {
-                    margin: auto; 
-                    width: 90%;
-        
-                    h3 {
-                        font-size: x-large;
-                    }
-        
-                    p {
-                        font-size: large;
-                        padding-left: 3%;
-                        padding-right: 3%;
-                    }
-                }
-            }
-        }
-    }
-
-    #workHistoryPage {
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; 
-        padding:2dvh;
-        font-size: medium;
-
-        h3 {
-            font-size: large;
-        }
-
-        #workHistory {         
-            flex-direction: column;
-            align-content: center;
-            height: auto;
-            width: 87.5dvw;
-            overflow: visible;
-            padding: 2dvw;
-            padding-bottom: 4dvw;
-            margin: auto;
-            margin-bottom: 2dvh;
-            background-color: $themebluemidlight;
-
-            h1 {
-                width: 100%;
-                text-align: left;
-                font-size: x-large;
-            }
-
-
-
-            .workCard {
-                margin:auto;
-                width: 88%;
-                margin-top: 5%;
-                padding: 3%;
-                
-                h3 {
-                    size: large;
-                }
-
-
-                a { 
-                    height:auto;
-                }
-
-                #ZVlogo {
-                    margin-top: -5%;
-                    margin-bottom: -10%;
-                }
-               
-                #placeH {
-                    scale: 60%;
-                    height:auto;
-                    margin-top: -10%;
-                    margin-bottom: -20%;
-                }
-            
-            }
-
-        }
-
-        #documents {
-            flex-direction: column;
-            align-content: center;
-            height: auto;
-            width: 87.5dvw;
-            padding: 2dvw;
-            margin-top: 5%;
-            margin-bottom: 5%;
-
-            .documentCard {
-                width: 88%;
-                padding: 3%;
-                margin: 2%;
-
-                .imageLink {
-                    scale: 80%;
-                }
-
-            }
-        }
-    }
-
-    #contactMePage {
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; 
-        padding:2dvh;
-        
-        a, h1 {
-            font-size: large;
-        }
-        .contactPhoto {
-            width: 45dvw;
-            margin: auto;
-        }
-
-        #contactForm {
+          .badgeRows {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
 
             * {
-                font-size: large;
+              margin: 1%;
+              gap: 0;
+              height: auto;
+              width: 15%;
             }
-
-            order: 1;
-            width: 80dvw;
-            padding: 5dvw;
-            margin: auto;
-            margin-top: 5%;
-            margin-bottom: 5%;
-            background-color: $themebluelight;
+          }
         }
+
+        h3,
+        p {
+          font-size: large;
+        }
+      }
     }
 
-    #underConstructionPage {
-        flex-direction: column;
-        justify-content: center;
+    #hobbiesInterests {
+      justify-content: space-between;
+      height: 80dvh;
+      width: 90dvw;
+      overflow: visible;
+      padding-top: 1%;
+      margin-bottom: 2dvh;
+      padding-bottom: 5%;
 
-        h1 {
-            line-height: auto;
-            font-size: 75px;
-            height: 40%;
-            width: auto;
-            align-self: center;
-            margin: auto;
+      h1 {
+        font-size: x-large;
+        height: auto;
+        padding: 1%;
+      }
+
+      .Hobbie {
+        margin: auto;
+        flex-direction: row;
+        padding: 1%;
+        width: 85%;
+        height: 25%;
+
+        p {
+          font-size: large;
         }
+      }
+    }
+
+    #tuxCat {
+      scale: 90%;
+    }
+  }
+
+  #projectsPage {
+    // margin: 2dvw;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+
+    .boxBorder,
+    #projectCards {
+      height: auto;
+      width: 92dvw;
+      overflow: visible;
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 2dvh;
+      padding-bottom: 1%;
+      background-color: $themebluemidlight;
+
+      h1 {
+        font-size: xx-large;
+      }
+
+      .projectCard {
+        width: 45%;
+        height: 35%;
+        padding: 1%;
+        padding-bottom: 4%;
 
         h3 {
-            line-height: auto;
-            font-size: 50px;
-            height: auto;
+          font-size: large;
+          margin-bottom: 5%;
         }
-
-        #pickAxe {
-            scale:80%;
-            height: 20dvh;
-            width: auto;
-            margin: auto;
-        }
+      }
     }
 
-    .unscrollFooter {
-        position: fixed;
-        bottom: 0px;
+    #projectDetail {
+      width: 90dvw;
+      overflow: visible;
+      height: auto;
+      padding: 1%;
+      padding-bottom: 4%;
+
+      h1 {
+        font-size: xx-large;
+      }
+
+      .projectDetails {
+        margin: 0;
+        padding: 0;
+
+        .projectInfo {
+          margin: auto;
+          width: 90%;
+
+          h3 {
+            font-size: x-large;
+          }
+
+          p {
+            font-size: large;
+            padding-left: 3%;
+            padding-right: 3%;
+          }
+        }
+      }
+    }
+  }
+
+  #workHistoryPage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+    font-size: medium;
+
+    h3 {
+      font-size: large;
     }
 
+    #workHistory {
+      flex-direction: column;
+      align-content: center;
+      height: auto;
+      width: 87.5dvw;
+      overflow: visible;
+      padding: 2dvw;
+      padding-bottom: 4dvw;
+      margin: auto;
+      margin-bottom: 2dvh;
+      background-color: $themebluemidlight;
+
+      h1 {
+        width: 100%;
+        text-align: left;
+        font-size: x-large;
+      }
+
+      .workCard {
+        margin: auto;
+        width: 88%;
+        margin-top: 5%;
+        padding: 3%;
+
+        h3 {
+          size: large;
+        }
+
+        a {
+          height: auto;
+        }
+
+        #ZVlogo {
+          margin-top: -5%;
+          margin-bottom: -10%;
+        }
+
+        #placeH {
+          scale: 60%;
+          height: auto;
+          margin-top: -10%;
+          margin-bottom: -20%;
+        }
+      }
+    }
+
+    #documents {
+      flex-direction: column;
+      align-content: center;
+      height: auto;
+      width: 87.5dvw;
+      padding: 2dvw;
+      margin-top: 5%;
+      margin-bottom: 5%;
+
+      .documentCard {
+        width: 88%;
+        padding: 3%;
+        margin: 2%;
+
+        .imageLink {
+          scale: 80%;
+        }
+      }
+    }
+  }
+
+  #contactMePage {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+
+    a,
+    h1 {
+      font-size: large;
+    }
+    .contactPhoto {
+      width: 45dvw;
+      margin: auto;
+    }
+
+    #contactForm {
+      * {
+        font-size: large;
+      }
+
+      order: 1;
+      width: 80dvw;
+      padding: 5dvw;
+      margin: auto;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: $themebluelight;
+    }
+  }
+
+  #underConstructionPage {
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      line-height: auto;
+      font-size: 75px;
+      height: 40%;
+      width: auto;
+      align-self: center;
+      margin: auto;
+    }
+
+    h3 {
+      line-height: auto;
+      font-size: 50px;
+      height: auto;
+    }
+
+    #pickAxe {
+      scale: 80%;
+      height: 20dvh;
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  .unscrollFooter {
+    position: fixed;
+    bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: $breakpointMobile) {
+  * {
+    font-size: small;
+  }
+
+  header {
+    padding-top: 2%;
+    font-size: x-small;
+    padding-bottom: 2%;
+
+    img {
+      height: 8dvh;
+      width: auto;
+    }
+
+    section nav button {
+      transition: 0s;
+      font-size: small;
+      text-decoration: underline;
+    }
+  }
+
+  footer {
     * {
-        font-size: small;
-    }  
-
-    header {
-        padding-top: 2%;
-        font-size: x-small;
-        padding-bottom: 2%;
-
-        img {
-            height: 8dvh;
-            width: auto;
-        }
-
-        section nav button {
-            transition: 0s;
-            font-size: small;
-            text-decoration: underline;
-        }
+      font-size: xx-small;
     }
 
-    footer {    
-        * {
-            font-size: xx-small;
-        }
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+    // padding-left: 1%;
+    padding-bottom: 2dvh;
+    height: 8dvh;
+    position: relative;
+    bottom: 0px;
 
-        flex-flow: column wrap;
+    #footerNav {
+      flex-basis: 80%;
+      margin-left: 1%;
+      padding: 0;
+      width: 45%;
+      // width: auto;
+    }
+
+    #mailto {
+      order: 1;
+      width: 50%;
+      text-align: right;
+      margin-top: 0.5dvh;
+
+      a {
+        display: none;
+      }
+
+      p {
+        display: inline;
+      }
+    }
+
+    #socialButtons {
+      // padding-top: 2%;
+      // text-align: justify;
+      width: 50%;
+      margin-left: 0;
+      gap: 2dvw;
+      // flex-basis: 50%;
+      // align-items: center;
+      justify-content: flex-end;
+      a i {
+        font-size: medium;
+        // width: 60%;
+        // text-align:
+      }
+    }
+  }
+
+  #homePage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+
+    #profilePhoto {
+      width: 80dvw;
+      height: auto;
+      margin: auto;
+      padding: 5%;
+      padding-bottom: 10%;
+
+      img {
+        max-width: 100%;
+        @include ani.neonEffectMobile($themepurplelight, $themeredlight);
+      }
+    }
+
+    #aboutMe {
+      height: auto;
+      width: 90dvw;
+      overflow: visible;
+      margin-top: 0;
+      padding-top: 3%;
+      margin-bottom: 2dvh;
+      padding-bottom: 8%;
+
+      h1 {
+        font-size: medium;
+      }
+
+      #wrapper {
         justify-content: center;
-        margin-top: 0;
+        align-items: center;
+        margin: 0;
         padding: 0;
-        // padding-left: 1%;
-        padding-bottom: 2dvh;
-        height: 8dvh;
-        position: relative;
-        bottom: 0px;
+        width: 90%;
+        margin-top: 2%;
 
-        #footerNav {
-            flex-basis: 80%;
-            margin-left: 1%;
-            padding: 0;
-            width:45%;
-            // width: auto;
+        p {
+          font-size: small;
         }
 
-        #mailto {
-            order: 1;
-            width:50%;
-            text-align: right;
-            margin-top: 0.5dvh;
+        #progLang {
+          width: 70%;
+          max-width: 70%;
 
-            a {
-                display: none;
+          .badgeRows {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            width: auto;
+
+            * {
+              margin: 1%;
+              gap: 0;
+              height: auto;
+              width: 20%;
             }
-            
-            p {
-                display: inline;
-            }
+          }
         }
-        
-        #socialButtons {
-            // padding-top: 2%;
-            // text-align: justify;
-            width: 50%;
-            margin-left: 0;
-            gap: 2dvw;
-            // flex-basis: 50%;
-            // align-items: center;
-            justify-content: flex-end;
-            a i {
-                font-size: medium;
-                // width: 60%;
-                // text-align: 
-            }
-        }
-        
-        
+      }
     }
 
-    #homePage {
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; 
-        padding:2dvh;
+    #hobbiesInterests {
+      height: 71.5dvh;
+      width: 90dvw;
+      overflow: visible;
+      margin-top: 5%;
+      padding-top: 1%;
+      margin-bottom: 2dvh;
+      padding-bottom: 3%;
 
-        #profilePhoto {
-            width: 80dvw;
-            height:auto;
-            margin: auto;
-            padding: 5%;
-            padding-bottom: 10%;;
+      h1 {
+        font-size: large;
+        padding: 2%;
+      }
 
-            img {
-                max-width: 100%;
-                @include ani.neonEffectMobile ($themepurplelight,$themeredlight)
-            }
-
-        }
-
-        #aboutMe {         
-            height: auto;
-            width: 90dvw;
-            overflow: visible;
-            margin-top: 0;
-            padding-top: 3%;
-            margin-bottom: 2dvh;
-            padding-bottom: 8%;
-            
-            h1 {
-                font-size: medium;
-            }
-
-            #wrapper{
-                justify-content: center;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-                width: 90%;
-                margin-top: 2%;
-                
-                
-    
-                p {
-                    font-size: small;
-                }
-
-
-                #progLang {
-                    width:70%;
-                    max-width: 70%;
-        
-                    .badgeRows {
-                        display: flex;
-                        justify-content: center;
-                        flex-wrap: nowrap;
-                        width: auto;
-
-        
-                        * {
-                            margin: 1%;
-                            gap: 0;
-                            height: auto;
-                            width: 20%;
-                        }
-                    }
-                }
-            }
-            
-        }
-
-
-        
-
-        #hobbiesInterests {
-            height: 71.5dvh;
-            width: 90dvw;
-            overflow: visible;
-            margin-top: 5%;
-            padding-top: 1%;
-            margin-bottom: 2dvh;
-            padding-bottom: 3%;
-
-
-            h1 {
-                font-size: large;
-                padding: 2%;
-            }
-
-            .Hobbie {
-                flex-direction: row;
-                padding: 1%;
-
-            }
-
-        }
-
-        #tuxCat {
-            scale: 80%;
-        }
+      .Hobbie {
+        flex-direction: row;
+        padding: 1%;
+      }
     }
 
-    #projectsPage {
-        // margin: 2dvw;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; 
-        padding:2dvh;
+    #tuxCat {
+      scale: 80%;
+    }
+  }
 
-        .boxBorder , #projectCards {         
-            height: auto;
-            width: 90dvw;
-            overflow: visible;
-            margin-top: 0;
-            padding-top: 0;
-            margin-bottom: 2dvh;
-            padding-bottom: 0;
-            background-color: $themebluemidlight;
+  #projectsPage {
+    // margin: 2dvw;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
 
-            // #projectCards {
-            //     padding-bottom: 2dvh;
-            // }
-            
-            .projectCard {
-                width: 90%;
-                height: 35%;
-                padding: 1%;
-                padding-bottom: 4%;
-                // font-size: small;
-                // height: auto;
+    .boxBorder,
+    #projectCards {
+      height: auto;
+      width: 90dvw;
+      overflow: visible;
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 2dvh;
+      padding-bottom: 0;
+      background-color: $themebluemidlight;
 
-                h3 {
-                    margin-bottom: 3%;
-                }
+      // #projectCards {
+      //     padding-bottom: 2dvh;
+      // }
 
-
-                // img {
-                //     height: fit-content;
-                // }
-
-            }
-        }
-
-    #projectDetail {
-        width: 90dvw;
-        overflow: visible;
-        height: auto;
+      .projectCard {
+        width: 90%;
+        height: 35%;
         padding: 1%;
         padding-bottom: 4%;
-    }
-    }
-
-    #workHistoryPage {
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; 
-        padding:2dvh;
+        // font-size: small;
+        // height: auto;
 
         h3 {
-            font-size: medium;
+          margin-bottom: 3%;
         }
 
-        #workHistory {         
-            flex-direction: column;
-            align-content: center;
-            height: auto;
-            width: 87.5dvw;
-            overflow: visible;
-            padding: 2dvw;
-            padding-bottom: 4dvw;
-            margin: auto;
-            margin-bottom: 2dvh;
-            background-color: $themebluemidlight;
-
-            h1 {
-                width: 100%;
-                text-align: left;
-                font-size: x-large;
-            }
-
-
-
-            .workCard {
-                margin:auto;
-                width: 88%;
-                margin-top: 5%;
-                padding: 3%;
-                
-
-
-                a { 
-                    height:auto;
-                }
-
-                #ZVlogo {
-                    margin-top: -5%;
-                    margin-bottom: -10%;
-                }
-               
-                #placeH {
-                    scale: 60%;
-                    height:auto;
-                    margin-top: -15%;
-                    margin-bottom: -20%;
-                }
-            
-            }
-
-        }
-
-        #documents {
-            flex-direction: column;
-            align-content: center;
-            height: auto;
-            width: 87.5dvw;
-            padding: 2dvw;
-            margin-top: 5%;
-            margin-bottom: 5%;
-
-            .documentCard {
-                width: 88%;
-                padding: 3%;
-                margin: 2%;
-
-                .imageLink {
-                    scale: 80%;
-                }
-
-            }
-        }
+        // img {
+        //     height: fit-content;
+        // }
+      }
     }
 
-    #contactMePage {
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: scroll; 
-        padding:2dvh;
-        
-        a, h1 {
-            font-size: large;
-        }
-        .contactPhoto {
-            width: 80dvw;
-            margin-bottom: 5%;
-        }
+    #projectDetail {
+      width: 90dvw;
+      overflow: visible;
+      height: auto;
+      padding: 1%;
+      padding-bottom: 4%;
+    }
+  }
 
-        #contactForm {
-            order: -1;
-            width: 80dvw;
-            padding: 5dvw;
-            margin-bottom: 5%;
-            background-color: $themebluelight;
-        }
+  #workHistoryPage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+
+    h3 {
+      font-size: medium;
     }
 
-    #underConstructionPage {
-        flex-direction: row wrap;
+    #workHistory {
+      flex-direction: column;
+      align-content: center;
+      height: auto;
+      width: 87.5dvw;
+      overflow: visible;
+      padding: 2dvw;
+      padding-bottom: 4dvw;
+      margin: auto;
+      margin-bottom: 2dvh;
+      background-color: $themebluemidlight;
 
-        h1 {
-            line-height: auto;
-            font-size: xx-large;
-            height: auto;
-            width: auto;
-            align-self: center;
-            margin: auto;
+      h1 {
+        width: 100%;
+        text-align: left;
+        font-size: x-large;
+      }
+
+      .workCard {
+        margin: auto;
+        width: 88%;
+        margin-top: 5%;
+        padding: 3%;
+
+        a {
+          height: auto;
         }
 
-        h3 {
-            line-height: auto;
-            font-size: x-large;
-            height: auto;
+        #ZVlogo {
+          margin-top: -5%;
+          margin-bottom: -10%;
         }
 
-        #pickAxe {
-            scale: 50%;
-            width:auto;
+        #placeH {
+          scale: 60%;
+          height: auto;
+          margin-top: -15%;
+          margin-bottom: -20%;
         }
-
+      }
     }
 
-    .unscrollFooter {
-        position: fixed;
-        bottom: 0px;
+    #documents {
+      flex-direction: column;
+      align-content: center;
+      height: auto;
+      width: 87.5dvw;
+      padding: 2dvw;
+      margin-top: 5%;
+      margin-bottom: 5%;
+
+      .documentCard {
+        width: 88%;
+        padding: 3%;
+        margin: 2%;
+
+        .imageLink {
+          scale: 80%;
+        }
+      }
     }
+  }
+
+  #contactMePage {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 2dvh;
+
+    a,
+    h1 {
+      font-size: large;
+    }
+    .contactPhoto {
+      width: 80dvw;
+      margin-bottom: 5%;
+    }
+
+    #contactForm {
+      order: -1;
+      width: 80dvw;
+      padding: 5dvw;
+      margin-bottom: 5%;
+      background-color: $themebluelight;
+    }
+  }
+
+  #underConstructionPage {
+    flex-direction: row wrap;
+
+    h1 {
+      line-height: auto;
+      font-size: xx-large;
+      height: auto;
+      width: auto;
+      align-self: center;
+      margin: auto;
+    }
+
+    h3 {
+      line-height: auto;
+      font-size: x-large;
+      height: auto;
+    }
+
+    #pickAxe {
+      scale: 50%;
+      width: auto;
+    }
+  }
+
+  .unscrollFooter {
+    position: fixed;
+    bottom: 0px;
+  }
 }
-

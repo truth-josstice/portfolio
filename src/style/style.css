@@ -79,7 +79,7 @@
   margin: 0;
   padding: 0;
   font-family: "Tilt Neon", sans-serif;
-  color: #0E192F;
+  color: #0e192f;
 }
 
 header {
@@ -88,7 +88,7 @@ header {
   background-color: #070f26;
   justify-content: space-between;
   align-items: center;
-  color: #829CBC;
+  color: #829cbc;
   font-family: "Iceland", sans-serif;
   display: flex;
   flex-flow: row wrap;
@@ -129,16 +129,18 @@ header section nav button {
   background-color: #070f26;
   text-align: center;
   font-size: large;
-  color: #829CBC;
+  color: #829cbc;
   transition: text-shadow, scale, 1s;
 }
 
 body {
-  background-color: #141F3C;
+  background-color: #141f3c;
   padding-bottom: 0;
   height: 100%;
 }
-body button, body i, body #submit {
+body button,
+body i,
+body #submit {
   cursor: pointer;
 }
 
@@ -162,7 +164,7 @@ body button, body i, body #submit {
   height: auto;
   width: auto;
   border-radius: 50%;
-  box-shadow: 0 0 5px #67507E, 0 0 15px #67507E, 0 0 20px #67507E, 0 0 40px #B76E72, 0 0 60px #B76E72, 0 0 98px #B76E72;
+  box-shadow: 0 0 5px #67507e, 0 0 15px #67507e, 0 0 20px #67507e, 0 0 40px #b76e72, 0 0 60px #b76e72, 0 0 98px #b76e72;
 }
 #homePage #aboutMe {
   display: flex;
@@ -173,13 +175,13 @@ body button, body i, body #submit {
   width: 40dvw;
   border-radius: 25px;
   background-color: #384363;
-  box-shadow: #4C3663 0px 0px 25px;
+  box-shadow: #4c3663 0px 0px 25px;
 }
 #homePage #aboutMe * {
   padding: 1%;
 }
 #homePage #aboutMe h1 {
-  text-shadow: 0 0 0.25dvw #829CBC;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 #homePage #aboutMe #wrapper {
   display: flex;
@@ -187,12 +189,13 @@ body button, body i, body #submit {
   height: 85%;
   width: 90%;
   border-radius: 25px;
-  background-color: #515D7E;
-  box-shadow: 0 0 5px #91494D, inset 0 0 5px #380407;
+  background-color: #515d7e;
+  box-shadow: 0 0 5px #91494d, inset 0 0 5px #380407;
   margin-bottom: 2%;
   padding-bottom: 2%;
 }
-#homePage #aboutMe #wrapper h3, #homePage #aboutMe #wrapper p {
+#homePage #aboutMe #wrapper h3,
+#homePage #aboutMe #wrapper p {
   text-align: center;
   width: 95%;
   margin: auto;
@@ -219,7 +222,7 @@ body button, body i, body #submit {
   width: 20dvw;
   border-radius: 25px;
   background-color: #384363;
-  box-shadow: #4C3663 0px 0px 25px;
+  box-shadow: #4c3663 0px 0px 25px;
 }
 #homePage #hobbiesInterests h1 {
   height: auto;
@@ -231,8 +234,8 @@ body button, body i, body #submit {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  background-color: #515D7E;
-  box-shadow: 0 0 5px #91494D, inset 0 0 5px #380407;
+  background-color: #515d7e;
+  box-shadow: 0 0 5px #91494d, inset 0 0 5px #380407;
   margin: auto;
   height: 25%;
   width: 90%;
@@ -250,7 +253,7 @@ body button, body i, body #submit {
 }
 #homePage #hobbiesInterests h1 {
   text-align: center;
-  text-shadow: 0 0 0.25dvw #829CBC;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 #homePage #tuxCat {
   rotate: 90deg;
@@ -273,7 +276,7 @@ body button, body i, body #submit {
   height: 71.5dvh;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: #4C3663 0px 0px 25px;
+  box-shadow: #4c3663 0px 0px 25px;
 }
 #projectsPage #projectCards {
   text-align: center;
@@ -297,7 +300,7 @@ body button, body i, body #submit {
   margin-top: 1dvh;
   font-size: x-large;
   flex-basis: 100%;
-  text-shadow: 0 0 0.25dvw #829CBC;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 #projectsPage #projectCards .projectCard {
   display: flex;
@@ -308,8 +311,8 @@ body button, body i, body #submit {
   border-radius: 25px;
   width: 40%;
   height: 30%;
-  background-color: #515D7E;
-  box-shadow: 0 0 5px #91494D, inset 0 0 5px #380407;
+  background-color: #515d7e;
+  box-shadow: 0 0 5px #91494d, inset 0 0 5px #380407;
   transition: transform 3s ease;
 }
 #projectsPage #projectCards .projectCard .detailLink {
@@ -330,7 +333,7 @@ body button, body i, body #submit {
   flex-basis: 100%;
   padding-top: 2%;
   padding-left: 2%;
-  text-shadow: 0 0 0.25dvw #829CBC;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 #projectsPage #projectCards .projectCard img {
   margin-left: 10px;
@@ -345,11 +348,23 @@ body button, body i, body #submit {
   margin-left: 2%;
   height: 55%;
 }
+#projectsPage #projectCards h1 {
+  order: -10;
+}
 #projectsPage #projectCards #portfolioCard {
-  order: -1;
+  order: 0;
 }
 #projectsPage #projectCards #programCard {
+  order: -1;
+}
+#projectsPage #projectCards #SQLCard {
   order: -2;
+}
+#projectsPage #projectCards #documentationCard {
+  order: -3;
+}
+#projectsPage #projectCards #flaskCard {
+  order: -5;
 }
 #projectsPage #projectDetail {
   text-align: center;
@@ -372,7 +387,7 @@ body button, body i, body #submit {
   height: auto;
   margin-top: 1dvh;
   font-size: x-large;
-  text-shadow: 0 0 0.25dvw #829CBC;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 #projectsPage #projectDetail .projectDetails {
   display: flex;
@@ -386,12 +401,12 @@ body button, body i, body #submit {
   padding: 1dvh;
   width: 85%;
   margin: auto;
-  box-shadow: inset 0 0 5px #380407, 0 0 5px #91494D;
+  box-shadow: inset 0 0 5px #380407, 0 0 5px #91494d;
   border-radius: 25px;
-  background-color: #515D7E;
+  background-color: #515d7e;
 }
 #projectsPage #projectDetail .projectInfo h3 {
-  text-shadow: 0 0 0.25dvw #829CBC;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 
 #workHistoryPage {
@@ -411,21 +426,21 @@ body button, body i, body #submit {
   border-radius: 25px;
   overflow: hidden;
   background-color: #384363;
-  box-shadow: #4C3663 0px 0px 25px;
+  box-shadow: #4c3663 0px 0px 25px;
 }
 #workHistoryPage #workHistory h1 {
   margin: auto;
   padding-left: 2%;
   flex-basis: 100%;
   height: auto;
-  text-shadow: 0 0 0.25dvw #829CBC;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 #workHistoryPage #workHistory h3 {
   margin-top: -1%;
   padding-left: 2%;
   flex-basis: 100%;
   height: auto;
-  text-shadow: 0 0 0.25dvw #829CBC;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 #workHistoryPage #workHistory .workCard {
   display: flex;
@@ -433,9 +448,9 @@ body button, body i, body #submit {
   justify-content: flex-start;
   height: 80%;
   width: 30%;
-  background-color: #515D7E;
+  background-color: #515d7e;
   border-radius: 25px;
-  box-shadow: 0 0 5px #91494D, inset 0 0 5px #380407;
+  box-shadow: 0 0 5px #91494d, inset 0 0 5px #380407;
 }
 #workHistoryPage #workHistory .workCard a {
   display: flex;
@@ -490,8 +505,8 @@ body button, body i, body #submit {
   border-radius: 25px;
   overflow: hidden;
   background-color: #384363;
-  box-shadow: #4C3663 0px 0px 25px;
-  text-shadow: 0 0 0.25dvw #829CBC;
+  box-shadow: #4c3663 0px 0px 25px;
+  text-shadow: 0 0 0.25dvw #829cbc;
 }
 #workHistoryPage #documents h1 {
   padding-top: 2%;
@@ -510,8 +525,8 @@ body button, body i, body #submit {
   width: 80%;
   height: 35%;
   border-radius: 25px;
-  background-color: #515D7E;
-  box-shadow: 0 0 5px #91494D, inset 0 0 5px #380407;
+  background-color: #515d7e;
+  box-shadow: 0 0 5px #91494d, inset 0 0 5px #380407;
 }
 #workHistoryPage #documents .documentCard .imageLink {
   width: 35%;
@@ -547,8 +562,8 @@ body button, body i, body #submit {
   border-radius: 25px;
   height: auto;
   width: 30%;
-  background-color: #515D7E;
-  box-shadow: #4C3663 0px 0px 25px;
+  background-color: #515d7e;
+  box-shadow: #4c3663 0px 0px 25px;
 }
 #contactMePage #contactForm label {
   flex-basis: 100%;
@@ -577,8 +592,8 @@ body button, body i, body #submit {
   text-align: center;
 }
 #contactMePage .contactPhoto * {
-  color: #829CBC;
-  text-shadow: 0 0 5px #732A2D, 0 0 2px #B76E72;
+  color: #829cbc;
+  text-shadow: 0 0 5px #732a2d, 0 0 2px #b76e72;
 }
 #contactMePage .contactPhoto img {
   filter: grayscale(1);
@@ -598,8 +613,8 @@ body button, body i, body #submit {
   font-size: 48px;
 }
 #underConstructionPage * {
-  text-shadow: 0 0 5px #4C3663, 0 0 15px #4C3663, 0 0 20px #4C3663, 0 0 40px #37204F, 0 0 60px #37204F, 0 0 98px #37204F;
-  color: #67507E;
+  text-shadow: 0 0 5px #4c3663, 0 0 15px #4c3663, 0 0 20px #4c3663, 0 0 40px #37204f, 0 0 60px #37204f, 0 0 98px #37204f;
+  color: #67507e;
   font-family: "Iceland", sans-serif;
   height: 50%;
   padding: 5%;
@@ -617,7 +632,7 @@ body button, body i, body #submit {
 }
 
 footer {
-  color: #829CBC;
+  color: #829cbc;
   display: flex;
   flex-direction: row;
   width: 100dvw;
@@ -630,27 +645,27 @@ footer {
 footer #footerNav {
   align-self: center;
   margin-left: 0.5%;
-  color: #829CBC;
+  color: #829cbc;
 }
 footer #footerNav * {
-  color: #829CBC;
+  color: #829cbc;
   text-decoration: none;
 }
 footer #footerNav a:hover {
-  color: #67507E;
+  color: #67507e;
 }
 footer #mailto {
   margin-left: 1%;
   margin-top: 0.5%;
 }
 footer #mailto * {
-  color: #829CBC;
+  color: #829cbc;
 }
 footer #mailto p {
   display: none;
 }
 footer #mailto a:hover {
-  color: #67507E;
+  color: #67507e;
 }
 footer #socialButtons {
   display: flex;
@@ -661,7 +676,7 @@ footer #socialButtons {
   width: 20%;
 }
 footer #socialButtons * {
-  color: #829CBC;
+  color: #829cbc;
   list-style: none;
 }
 footer #socialButtons i {
@@ -671,14 +686,14 @@ footer #socialButtons i {
 
 @media only screen and (min-width: 951px) {
   header section nav button:hover {
-    text-shadow: 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E, 0 0 5px #67507E;
+    text-shadow: 0 0 5px #67507e, 0 0 5px #67507e, 0 0 5px #67507e, 0 0 5px #67507e, 0 0 5px #67507e, 0 0 5px #67507e, 0 0 5px #67507e, 0 0 5px #67507e;
     scale: 110%;
   }
   .projectCard:hover {
     transform: scale(1.1);
   }
   #socialButtons i:hover {
-    color: #67507E;
+    color: #67507e;
   }
   .projectInfo p {
     font-size: large;
@@ -742,7 +757,7 @@ footer #socialButtons i {
   }
   #homePage #profilePhoto img {
     max-width: 100%;
-    box-shadow: 0 0 2px #67507E, 0 0 6px #67507E, 0 0 8px #67507E, 0 0 16px #B76E72, 0 0 24px #B76E72, 0 0 48px #B76E72;
+    box-shadow: 0 0 2px #67507e, 0 0 6px #67507e, 0 0 8px #67507e, 0 0 16px #b76e72, 0 0 24px #b76e72, 0 0 48px #b76e72;
   }
   #homePage #aboutMe {
     height: auto;
@@ -778,7 +793,8 @@ footer #socialButtons i {
     height: auto;
     width: 15%;
   }
-  #homePage #aboutMe #wrapper h3, #homePage #aboutMe #wrapper p {
+  #homePage #aboutMe #wrapper h3,
+  #homePage #aboutMe #wrapper p {
     font-size: large;
   }
   #homePage #hobbiesInterests {
@@ -815,7 +831,8 @@ footer #socialButtons i {
     overflow: scroll;
     padding: 2dvh;
   }
-  #projectsPage .boxBorder, #projectsPage #projectCards {
+  #projectsPage .boxBorder,
+  #projectsPage #projectCards {
     height: auto;
     width: 92dvw;
     overflow: visible;
@@ -825,16 +842,19 @@ footer #socialButtons i {
     padding-bottom: 1%;
     background-color: #384363;
   }
-  #projectsPage .boxBorder h1, #projectsPage #projectCards h1 {
+  #projectsPage .boxBorder h1,
+  #projectsPage #projectCards h1 {
     font-size: xx-large;
   }
-  #projectsPage .boxBorder .projectCard, #projectsPage #projectCards .projectCard {
+  #projectsPage .boxBorder .projectCard,
+  #projectsPage #projectCards .projectCard {
     width: 45%;
     height: 35%;
     padding: 1%;
     padding-bottom: 4%;
   }
-  #projectsPage .boxBorder .projectCard h3, #projectsPage #projectCards .projectCard h3 {
+  #projectsPage .boxBorder .projectCard h3,
+  #projectsPage #projectCards .projectCard h3 {
     font-size: large;
     margin-bottom: 5%;
   }
@@ -938,7 +958,8 @@ footer #socialButtons i {
     overflow: scroll;
     padding: 2dvh;
   }
-  #contactMePage a, #contactMePage h1 {
+  #contactMePage a,
+  #contactMePage h1 {
     font-size: large;
   }
   #contactMePage .contactPhoto {
@@ -952,7 +973,7 @@ footer #socialButtons i {
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    background-color: #515D7E;
+    background-color: #515d7e;
   }
   #contactMePage #contactForm * {
     font-size: large;
@@ -1059,7 +1080,7 @@ footer #socialButtons i {
   }
   #homePage #profilePhoto img {
     max-width: 100%;
-    box-shadow: 0 0 2px #67507E, 0 0 6px #67507E, 0 0 8px #67507E, 0 0 16px #B76E72, 0 0 24px #B76E72, 0 0 48px #B76E72;
+    box-shadow: 0 0 2px #67507e, 0 0 6px #67507e, 0 0 8px #67507e, 0 0 16px #b76e72, 0 0 24px #b76e72, 0 0 48px #b76e72;
   }
   #homePage #aboutMe {
     height: auto;
@@ -1127,7 +1148,8 @@ footer #socialButtons i {
     overflow: scroll;
     padding: 2dvh;
   }
-  #projectsPage .boxBorder, #projectsPage #projectCards {
+  #projectsPage .boxBorder,
+  #projectsPage #projectCards {
     height: auto;
     width: 90dvw;
     overflow: visible;
@@ -1137,13 +1159,15 @@ footer #socialButtons i {
     padding-bottom: 0;
     background-color: #384363;
   }
-  #projectsPage .boxBorder .projectCard, #projectsPage #projectCards .projectCard {
+  #projectsPage .boxBorder .projectCard,
+  #projectsPage #projectCards .projectCard {
     width: 90%;
     height: 35%;
     padding: 1%;
     padding-bottom: 4%;
   }
-  #projectsPage .boxBorder .projectCard h3, #projectsPage #projectCards .projectCard h3 {
+  #projectsPage .boxBorder .projectCard h3,
+  #projectsPage #projectCards .projectCard h3 {
     margin-bottom: 3%;
   }
   #projectsPage #projectDetail {
@@ -1223,7 +1247,8 @@ footer #socialButtons i {
     overflow: scroll;
     padding: 2dvh;
   }
-  #contactMePage a, #contactMePage h1 {
+  #contactMePage a,
+  #contactMePage h1 {
     font-size: large;
   }
   #contactMePage .contactPhoto {
@@ -1235,7 +1260,7 @@ footer #socialButtons i {
     width: 80dvw;
     padding: 5dvw;
     margin-bottom: 5%;
-    background-color: #515D7E;
+    background-color: #515d7e;
   }
   #underConstructionPage {
     flex-direction: row wrap;
