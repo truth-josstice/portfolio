@@ -53,7 +53,7 @@ header {
     aspect-ratio: auto;
     height: 90%;
     margin-left: 2dvw;
-    margin-bottom: 1dvh;
+    margin-bottom: 1.3dvh;
   }
 
   section {
@@ -77,11 +77,12 @@ header {
       font-family: inherit;
       text-align: center;
       font-size: x-large;
+      margin-top: -1dvh;
     }
 
     nav {
       // font-family: inherit;
-      margin-top: 0.5dvh;
+      // margin-top: 0.0dvh;
       text-align: center;
 
       button {

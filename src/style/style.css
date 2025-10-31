@@ -100,7 +100,7 @@ header img {
   aspect-ratio: auto;
   height: 90%;
   margin-left: 2dvw;
-  margin-bottom: 1dvh;
+  margin-bottom: 1.3dvh;
 }
 header section {
   color: inherit;
@@ -120,9 +120,9 @@ header section h2 {
   font-family: inherit;
   text-align: center;
   font-size: x-large;
+  margin-top: -1dvh;
 }
 header section nav {
-  margin-top: 0.5dvh;
   text-align: center;
 }
 header section nav button {
